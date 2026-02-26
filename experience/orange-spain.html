@@ -12,13 +12,15 @@
 </head>
 <body>
 
+<script>window.EXP_SLUG = 'orange-spain';</script>
+
 <nav class="menubar">
   <div class="menubar-left">
-    <span class="apple-logo">⌘</span>
     <a href="../index.html" class="menu-item">pmchatton</a>
     <a href="../index.html#experience" class="menu-item active">Experience</a>
   </div>
   <div class="menubar-right">
+    <div class="lang-switcher" id="lang-switcher"></div>
     <span class="menu-clock" id="clock"></span>
   </div>
 </nav>
@@ -41,74 +43,51 @@
           <span class="btn-minimize"></span>
           <span class="btn-maximize"></span>
         </div>
-        <span class="window-title">orange-spain.md — Test &amp; Validation Manager</span>
+        <span class="window-title" id="exp-window-title">orange-spain.md</span>
       </div>
 
       <div class="window-content">
 
         <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
-          <div style="font-size:48px;line-height:1">📡</div>
+          <div style="font-size:48px;line-height:1" id="exp-emoji"></div>
           <div>
-            <h1 class="exp-detail-title">Test &amp; Validation Manager</h1>
-            <div class="exp-detail-company">Orange Spain</div>
+            <h1 class="exp-detail-title" id="exp-title"></h1>
+            <div class="exp-detail-company" id="exp-company"></div>
           </div>
         </div>
 
-        <div class="exp-meta-row">
-          <span class="meta-pill pill-blue">📅 September 2008 – March 2014</span>
-          <span class="meta-pill pill-orange">📍 Barcelona, Spain</span>
-          <span class="meta-pill pill-purple">🏢 Telecom · Mobile Networks</span>
-          <span class="meta-pill pill-green">📶 GSMA MWC Demonstrator 2011–2014</span>
+        <div class="exp-meta-row" id="exp-pills"></div>
+
+        <div class="section-sub" id="exp-context-label">Context</div>
+        <p style="color:var(--color-text-muted);font-size:15px;line-height:1.7;margin-bottom:28px" id="exp-context"></p>
+
+        <div class="section-sub" id="exp-achievements-label">Achievements</div>
+        <ul class="exp-achievements" id="exp-achievements"></ul>
+
+        <div id="exp-clients-block" style="display:none">
+          <div class="section-sub" id="exp-clients-label">Key Clients</div>
+          <div class="tech-tags" id="exp-clients"></div>
         </div>
 
-        <div class="section-sub">Context</div>
-        <p style="color:var(--color-text-muted);font-size:15px;line-height:1.7;margin-bottom:28px">
-          Orange Spain is one of Spain's major telecom operators. I managed international technical
-          teams responsible for testing and validating mobile network infrastructure, with a particular
-          focus on next-generation network capabilities showcased at GSMA Mobile World Congress.
-        </p>
+        <div class="section-sub" id="exp-stack-label">Stack &amp; Tools</div>
+        <div class="tech-tags" id="exp-stack"></div>
 
-        <div class="section-sub">Achievements</div>
-        <ul class="exp-achievements">
-          <li>Managed international technical teams for mobile network infrastructure testing and validation across multiple technology generations (2G/3G/4G)</li>
-          <li>Selected as demonstrator at <span class="metric">GSMA Mobile World Congress</span> for <span class="metric">4 consecutive years</span> (2011–2014) — representing Orange's technical capabilities to the global telecom industry</li>
-          <li>Coordinated cross-border test campaigns with vendor teams (Ericsson, Nokia, Huawei) and internal engineering groups</li>
-          <li>Delivered technical validation documentation and reports for regulatory and operational compliance</li>
-        </ul>
-
-        <div class="section-sub">Technologies</div>
-        <div class="tech-tags">
-          <span class="tech-tag">Mobile networks (2G/3G/4G)</span>
-          <span class="tech-tag">Test & validation</span>
-          <span class="tech-tag">Network infrastructure</span>
-          <span class="tech-tag">GSMA standards</span>
-          <span class="tech-tag">Vendor management</span>
-          <span class="tech-tag">International teams</span>
-        </div>
-
-        <div class="section-sub">Key Highlights</div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-bottom:28px">
-          <div style="background:var(--color-surface-2);border:1px solid var(--color-border);border-radius:8px;padding:16px;text-align:center">
-            <div style="font-family:var(--font-mono);font-size:28px;font-weight:700;color:var(--color-blue)">4×</div>
-            <div style="font-size:12px;color:var(--color-text-subtle)">GSMA MWC demonstrator</div>
-          </div>
-          <div style="background:var(--color-surface-2);border:1px solid var(--color-border);border-radius:8px;padding:16px;text-align:center">
-            <div style="font-family:var(--font-mono);font-size:28px;font-weight:700;color:var(--color-orange)">6</div>
-            <div style="font-size:12px;color:var(--color-text-subtle)">Years at Orange</div>
-          </div>
+        <div id="exp-metrics-block">
+          <div class="section-sub" id="exp-metrics-label">Key Metrics</div>
+          <div class="metric-grid" id="exp-metrics"></div>
         </div>
 
       </div>
     </div>
 
     <div class="exp-nav">
-      <a href="libon.html" class="exp-nav-link">
-        <span class="exp-nav-direction">← Previous</span>
-        <span class="exp-nav-title">Libon — Product Owner</span>
+      <a id="exp-nav-prev" href="#" class="exp-nav-link">
+        <span class="exp-nav-direction" id="exp-nav-prev-dir">← Previous</span>
+        <span class="exp-nav-title" id="exp-nav-prev-label"></span>
       </a>
-      <a href="niji.html" class="exp-nav-link exp-nav-right">
-        <span class="exp-nav-direction">Next →</span>
-        <span class="exp-nav-title">Niji — Solution Engineer</span>
+      <a id="exp-nav-next" href="#" class="exp-nav-link exp-nav-right">
+        <span class="exp-nav-direction" id="exp-nav-next-dir">Next →</span>
+        <span class="exp-nav-title" id="exp-nav-next-label"></span>
       </a>
     </div>
 
@@ -116,9 +95,10 @@
 </div>
 
 <footer>
-  <a href="../index.html">pmchatton.com</a> &nbsp;·&nbsp; Orange Spain · 2008–2014
+  <a href="../index.html">pmchatton.com</a> &nbsp;·&nbsp; <span id="exp-footer-company"></span>
 </footer>
 
+<script src="../js/content.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>
