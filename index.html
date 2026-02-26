@@ -62,6 +62,7 @@
                 <a
                     href="minesweeper.html"
                     class="desktop-icon"
+                    data-open="msw-window"
                 >
                     <div class="icon-img">💣</div>
                     <span class="icon-lbl">minesweeper</span>
@@ -411,5 +412,183 @@
 
         <script src="js/content.js"></script>
         <script src="js/main.js"></script>
+
+        <!-- ── Minesweeper floating window ───────────────────── -->
+        <div class="window" id="msw-window">
+            <div class="window-titlebar">
+                <div class="window-buttons">
+                    <span class="btn-close"></span>
+                    <span class="btn-minimize"></span>
+                    <span class="btn-maximize"></span>
+                </div>
+                <span class="window-title">Minesweeper</span>
+            </div>
+            <div class="msw-diff">
+                <button id="msw-diff-beginner" class="active" onclick="mswSetDifficulty('beginner')">Beginner</button>
+                <button id="msw-diff-intermediate" onclick="mswSetDifficulty('intermediate')">Intermediate</button>
+                <button id="msw-diff-expert" onclick="mswSetDifficulty('expert')">Expert</button>
+            </div>
+            <div class="msw-toolbar">
+                <div class="msw-lcd" id="msw-mine-count">010</div>
+                <button class="msw-face" id="msw-face" onclick="mswNewGame()">🙂</button>
+                <div class="msw-lcd" id="msw-timer">000</div>
+            </div>
+            <div class="msw-grid" id="msw-grid"></div>
+        </div>
+
+        <script>
+        (function () {
+            var DIFF = {
+                beginner:     { rows: 9,  cols: 9,  mines: 10 },
+                intermediate: { rows: 16, cols: 16, mines: 40 },
+                expert:       { rows: 16, cols: 30, mines: 99 },
+            };
+            var d = 'beginner', cfg = DIFF[d];
+            var board, revealed, flagged;
+            var gameOver, gameWon, firstClick;
+            var timerInterval, seconds, minesLeft;
+
+            function init() {
+                clearInterval(timerInterval);
+                seconds = 0; minesLeft = cfg.mines;
+                gameOver = false; gameWon = false; firstClick = true;
+                board    = mk2d(cfg.rows, cfg.cols, 0);
+                revealed = mk2d(cfg.rows, cfg.cols, false);
+                flagged  = mk2d(cfg.rows, cfg.cols, false);
+                face('🙂'); lcd('msw-mine-count', minesLeft); lcd('msw-timer', 0);
+                render();
+            }
+            function mk2d(r, c, v) {
+                return Array.from({length: r}, function() { return Array(c).fill(v); });
+            }
+            function neighbors(r, c, fn) {
+                for (var dr = -1; dr <= 1; dr++)
+                    for (var dc = -1; dc <= 1; dc++) {
+                        if (dr === 0 && dc === 0) continue;
+                        var nr = r+dr, nc = c+dc;
+                        if (nr >= 0 && nr < cfg.rows && nc >= 0 && nc < cfg.cols) fn(nr, nc);
+                    }
+            }
+            function placeMines(fr, fc) {
+                var safe = new Set();
+                neighbors(fr, fc, function(nr, nc) { safe.add(nr*cfg.cols+nc); });
+                safe.add(fr*cfg.cols+fc);
+                var placed = 0;
+                while (placed < cfg.mines) {
+                    var r = Math.floor(Math.random()*cfg.rows);
+                    var c = Math.floor(Math.random()*cfg.cols);
+                    if (board[r][c] !== -1 && !safe.has(r*cfg.cols+c)) { board[r][c] = -1; placed++; }
+                }
+                for (var r2 = 0; r2 < cfg.rows; r2++)
+                    for (var c2 = 0; c2 < cfg.cols; c2++) {
+                        if (board[r2][c2] === -1) continue;
+                        var n = 0;
+                        neighbors(r2, c2, function(nr, nc) { if (board[nr][nc] === -1) n++; });
+                        board[r2][c2] = n;
+                    }
+            }
+            function flood(r, c) {
+                if (r < 0 || r >= cfg.rows || c < 0 || c >= cfg.cols) return;
+                if (revealed[r][c] || flagged[r][c]) return;
+                revealed[r][c] = true;
+                if (board[r][c] === 0) neighbors(r, c, flood);
+            }
+            function click(r, c) {
+                if (gameOver || gameWon || revealed[r][c] || flagged[r][c]) return;
+                if (firstClick) {
+                    firstClick = false;
+                    placeMines(r, c);
+                    timerInterval = setInterval(function() { seconds = Math.min(seconds+1, 999); lcd('msw-timer', seconds); }, 1000);
+                }
+                if (board[r][c] === -1) { revealed[r][c] = true; boom(r, c); return; }
+                flood(r, c);
+                checkWin();
+                render();
+            }
+            function boom() {
+                gameOver = true; clearInterval(timerInterval); face('😵');
+                for (var r = 0; r < cfg.rows; r++)
+                    for (var c = 0; c < cfg.cols; c++)
+                        if (board[r][c] === -1) revealed[r][c] = true;
+                render();
+            }
+            function rclick(e, r, c) {
+                e.preventDefault();
+                if (gameOver || gameWon || revealed[r][c]) return;
+                flagged[r][c] = !flagged[r][c];
+                minesLeft += flagged[r][c] ? -1 : 1;
+                lcd('msw-mine-count', minesLeft);
+                render();
+            }
+            function chord(r, c) {
+                if (!revealed[r][c] || board[r][c] <= 0) return;
+                var flags = 0;
+                neighbors(r, c, function(nr, nc) { if (flagged[nr][nc]) flags++; });
+                if (flags !== board[r][c]) return;
+                var exploded = false;
+                neighbors(r, c, function(nr, nc) {
+                    if (revealed[nr][nc] || flagged[nr][nc]) return;
+                    if (board[nr][nc] === -1) { revealed[nr][nc] = true; exploded = true; }
+                    else flood(nr, nc);
+                });
+                if (exploded) { boom(); } else { checkWin(); render(); }
+            }
+            function checkWin() {
+                for (var r = 0; r < cfg.rows; r++)
+                    for (var c = 0; c < cfg.cols; c++)
+                        if (!revealed[r][c] && board[r][c] !== -1) return;
+                gameWon = true; clearInterval(timerInterval); face('😎');
+                for (var r2 = 0; r2 < cfg.rows; r2++)
+                    for (var c2 = 0; c2 < cfg.cols; c2++)
+                        if (board[r2][c2] === -1) flagged[r2][c2] = true;
+                minesLeft = 0; lcd('msw-mine-count', 0);
+            }
+            function render() {
+                var grid = document.getElementById('msw-grid');
+                grid.style.gridTemplateColumns = 'repeat('+cfg.cols+', 22px)';
+                grid.innerHTML = '';
+                for (var r = 0; r < cfg.rows; r++)
+                    for (var c = 0; c < cfg.cols; c++) {
+                        var cell = document.createElement('div');
+                        cell.className = 'msw-cell';
+                        (function(R, C) {
+                            cell.addEventListener('click', function() {
+                                if (revealed[R][C]) chord(R, C); else click(R, C);
+                            });
+                            cell.addEventListener('contextmenu', function(e) { rclick(e, R, C); });
+                        })(r, c);
+                        if (revealed[r][c]) {
+                            if (board[r][c] === -1) { cell.classList.add('mine-hit'); cell.textContent = '💣'; }
+                            else {
+                                cell.classList.add('revealed');
+                                if (board[r][c] > 0) { cell.textContent = board[r][c]; cell.classList.add('msw-n'+board[r][c]); }
+                            }
+                        } else if (flagged[r][c]) {
+                            cell.classList.add('flagged'); cell.textContent = '🚩';
+                        } else {
+                            cell.classList.add('hidden');
+                        }
+                        grid.appendChild(cell);
+                    }
+            }
+            function face(e) { var el = document.getElementById('msw-face'); if (el) el.textContent = e; }
+            function lcd(id, n) {
+                var el = document.getElementById(id); if (!el) return;
+                var v = Math.max(-99, Math.min(999, n));
+                el.textContent = v < 0 ? '-'+String(Math.abs(v)).padStart(2,'0') : String(v).padStart(3,'0');
+            }
+
+            window.mswSetDifficulty = function(diff) {
+                d = diff; cfg = DIFF[d];
+                document.querySelectorAll('.msw-diff button').forEach(function(b) { b.classList.remove('active'); });
+                var btn = document.getElementById('msw-diff-'+d);
+                if (btn) btn.classList.add('active');
+                init();
+            };
+            window.mswNewGame = init;
+
+            document.addEventListener('DOMContentLoaded', init);
+        })();
+        </script>
     </body>
 </html>

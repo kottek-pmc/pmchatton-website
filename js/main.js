@@ -80,7 +80,7 @@ function initWindows() {
     const titlebar = win.querySelector('.window-titlebar');
     if (!titlebar) return;
 
-    let isFloating = false;
+    let isFloating = win.style.position === 'fixed';
     let isDragging = false;
     let placeholder = null;
     let dragOffX = 0, dragOffY = 0;
@@ -90,6 +90,13 @@ function initWindows() {
       if (e.target.closest('.window-buttons')) return;
 
       win.style.zIndex = ++globalZ;
+
+      // Sync left/top if already floating but not yet positioned by JS
+      if (isFloating && !win.style.left) {
+        const rect = win.getBoundingClientRect();
+        win.style.left = rect.left + 'px';
+        win.style.top  = rect.top  + 'px';
+      }
 
       if (!isFloating) {
         const rect = win.getBoundingClientRect();
@@ -236,11 +243,31 @@ function initScrollNav() {
 // ============================================================
 function initDesktopIcons() {
   document.querySelectorAll('.desktop-icon:not(.icon-disabled)').forEach(icon => {
-    icon.addEventListener('click', () => {
+    icon.addEventListener('click', e => {
       document.querySelectorAll('.desktop-icon').forEach(i => i.classList.remove('selected'));
       icon.classList.add('selected');
 
-      // Reopen window if it was closed
+      // data-open: show/focus a named floating window
+      const openId = icon.dataset.open;
+      if (openId) {
+        e.preventDefault();
+        const w = document.getElementById(openId);
+        if (w) {
+          w.style.display = '';
+          w.style.zIndex = ++globalZ;
+          if (!w._wasShown) {
+            w._wasShown = true;
+            requestAnimationFrame(() => {
+              const barH = document.querySelector('.menubar')?.offsetHeight || 28;
+              w.style.left = Math.max(10, (window.innerWidth  - w.offsetWidth)  / 2) + 'px';
+              w.style.top  = Math.max(barH + 10, (window.innerHeight - w.offsetHeight) / 3) + 'px';
+            });
+          }
+        }
+        return;
+      }
+
+      // Reopen section window if it was closed
       const href = icon.getAttribute('href');
       if (href && href.startsWith('#')) {
         const win = document.querySelector(href + ' .window');
