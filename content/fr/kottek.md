@@ -21,7 +21,7 @@ metric_2: 5 | Collaborateurs | green
 metric_3: 6+ | Années d'activité | blue
 
 nav_prev_url: nuant.html
-nav_prev_label: Nuant — PM / DG
+nav_prev_label: Nuant — Head of Ops / DG
 nav_next_url: partakus.html
 nav_next_label: Partakus — Directeur de Projets
 ---

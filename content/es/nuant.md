@@ -1,9 +1,9 @@
 ---
 emoji: 🏦
-title: Product Manager / Director General
+title: Head of Operations / PM / Director General
 company: Nuant — SaaS para gestores de activos digitales
 company_short: Nuant · 2021–2025
-window_title: nuant.md — Product Manager / Director General
+window_title: nuant.md — Head of Operations / PM / Director General
 stack_label: Stack & Herramientas
 metrics_label: Cifras Clave
 context_label: Contexto

@@ -1,16 +1,16 @@
 ---
 emoji: 🏦
-title: PM / Managing Director
+title: Head of Operations / PM / Managing Director
 company: Nuant — SaaS for digital asset managers
 company_short: Nuant · 2021–2025
-window_title: nuant.md — PM / Managing Director
+window_title: nuant.md — Head of Operations / PM / Managing Director
 stack_label: Stack & Tools
 metrics_label: Key Metrics
 
 pill_1: green | 📅 March 2021 – October 2025
 pill_2: blue | 📍 Paris / Zug
 pill_3: orange | 🏢 Fintech · B2B SaaS
-pill_4: purple | 👥 16 employees · €2M turnover
+pill_4: purple | 👥 16 employees
 
 stack: Python, SQL, REST APIs, Real-time data streams, SOC2, ISO 27001, Jira, Figma, Agile / Scrum, Data pipelines, Monitoring dashboards
 

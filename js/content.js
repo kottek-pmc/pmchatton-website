@@ -256,6 +256,21 @@
       });
   }
 
+  // ── Exp titles loader (keeps index.html in sync with EN .md) ─
+  function loadExpTitles() {
+    document.querySelectorAll('.exp-row[data-slug]').forEach(function (row) {
+      var slug = row.getAttribute('data-slug');
+      fetch('content/en/' + slug + '.md').then(function (r) {
+        return r.ok ? r.text() : null;
+      }).then(function (text) {
+        if (!text) return;
+        var fm = parseMd(text).fm;
+        var titleEl = row.querySelector('.exp-title');
+        if (titleEl && fm.title) titleEl.textContent = fm.title;
+      });
+    });
+  }
+
   // ── Skills loader (from content/skills.json) ─────────────
   function loadSkills() {
     var base = isExpPage ? '..' : '.';
@@ -362,6 +377,7 @@
     } else {
       loadHomePage();
       loadSkills();
+      loadExpTitles();
     }
   });
 

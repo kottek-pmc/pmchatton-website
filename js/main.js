@@ -28,7 +28,7 @@ const terminalLines = [
   { delay: 1620, type: 'close',    text: '}' },
   { delay: 2000, type: 'cmd',      text: 'ls -la ./experience/' },
   { delay: 2250, type: 'ls',       text: 'total 7' },
-  { delay: 2350, type: 'ls-file',  date: '2021-03', name: 'nuant/',        role: 'PM / Managing Director',        color: 'green'  },
+  { delay: 2350, type: 'ls-file',  date: '2021-03', name: 'nuant/',        role: 'Head of Ops / PM / MD',         color: 'green'  },
   { delay: 2440, type: 'ls-file',  date: '2018-10', name: 'kottek/',       role: 'Founder & MD',                  color: 'orange' },
   { delay: 2530, type: 'ls-file',  date: '2017-09', name: 'partakus/',     role: 'Head of Projects',              color: 'purple' },
   { delay: 2620, type: 'ls-file',  date: '2015-03', name: 'palo-it/',      role: 'Hive Master, Pre-Sales',        color: 'blue'   },

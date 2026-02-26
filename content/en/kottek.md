@@ -19,7 +19,7 @@ metric_2: 5 | Employees | green
 metric_3: 6+ | Years running | blue
 
 nav_prev_url: nuant.html
-nav_prev_label: Nuant — PM / MD
+nav_prev_label: Nuant — Head of Ops / MD
 nav_next_url: partakus.html
 nav_next_label: Partakus — Head of Projects
 ---
