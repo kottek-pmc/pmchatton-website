@@ -1,10 +1,50 @@
 {
-  "projects": [
+  "sections": [
     {
-      "emoji": "🚀",
-      "name": "Kottek",
-      "tagline": "Product & Project Management Consultancy",
-      "url": "https://www.kottek.biz/"
+      "title": "Professional",
+      "projects": [
+        {
+          "emoji": "🚀",
+          "name": "Kottek",
+          "tagline": "Product & Project Management Consultancy",
+          "url": "https://www.kottek.biz/"
+        },
+        {
+          "emoji": "📊",
+          "name": "Nuant",
+          "tagline": "Enter the revolution of DeFi",
+          "url": "https://nuant.com/"
+        },
+        {
+          "emoji": "🔧",
+          "name": "Partakus/Kadensis",
+          "tagline": "Automotive spare parts marketplace",
+          "url": "https://kadensis.com/"
+        },
+        {
+          "emoji": "📞",
+          "name": "Libon",
+          "tagline": "Call and support your family",
+          "url": "https://www.libon.com/en"
+        }
+      ]
+    },
+    {
+      "title": "Personal",
+      "projects": [
+        {
+          "emoji": "🏘️",
+          "name": "Amicale Laïque de Plouézec",
+          "tagline": "Non-profit organization - President",
+          "url": "https://amicale-plouezec.fr"
+        },
+        {
+          "emoji": "🥊",
+          "name": "Paimpol Savate Boxe Française",
+          "tagline": "Boxing club - Coach",
+          "url": "https://paimpolsbf.fr/"
+        }
+      ]
     }
   ]
 }

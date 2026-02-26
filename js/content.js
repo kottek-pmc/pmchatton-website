@@ -221,7 +221,8 @@
         if (!data) return;
         var grid = el('portfolio-grid');
         if (!grid) return;
-        grid.innerHTML = data.projects.map(function (p) {
+
+        function renderCard(p) {
           var link = p.url
             ? '<a href="' + p.url + '" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top:4px">' +
               'Visit site →</a>'
@@ -235,7 +236,23 @@
             '</div></div>' +
             link +
             '</div>';
-        }).join('');
+        }
+
+        if (data.sections) {
+          grid.innerHTML = data.sections.map(function (s) {
+            return '<div class="section-sub" style="margin-bottom:10px;margin-top:18px">' + s.title + '</div>' +
+              '<div class="portfolio-grid-row">' +
+              s.projects.map(renderCard).join('') +
+              '</div>';
+          }).join('');
+          // Remove top margin from first section label
+          var first = grid.querySelector('.section-sub');
+          if (first) first.style.marginTop = '0';
+        } else {
+          grid.innerHTML = '<div class="portfolio-grid-row">' +
+            data.projects.map(renderCard).join('') +
+            '</div>';
+        }
       });
   }
 

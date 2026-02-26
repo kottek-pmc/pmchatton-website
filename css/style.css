@@ -1119,9 +1119,15 @@ footer a {
    PORTFOLIO
    ============================================ */
 .portfolio-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.portfolio-grid-row {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 12px;
+    margin-bottom: 8px;
 }
 .portfolio-card {
     background: var(--color-bg-subtle);
