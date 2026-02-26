@@ -86,9 +86,7 @@ function initWindows() {
     let dragOffX = 0, dragOffY = 0;
 
     // ── Drag ──────────────────────────────────────────────
-    titlebar.addEventListener('mousedown', e => {
-      if (e.target.closest('.window-buttons')) return;
-
+    function dragStart(clientX, clientY) {
       win.style.zIndex = ++globalZ;
 
       // Sync left/top if already floating but not yet positioned by JS
@@ -119,11 +117,22 @@ function initWindows() {
       }
 
       isDragging = true;
-      dragOffX = e.clientX - parseFloat(win.style.left);
-      dragOffY = e.clientY - parseFloat(win.style.top);
+      dragOffX = clientX - parseFloat(win.style.left);
+      dragOffY = clientY - parseFloat(win.style.top);
       win.classList.add('dragging');
+    }
+
+    titlebar.addEventListener('mousedown', e => {
+      if (e.target.closest('.window-buttons')) return;
+      dragStart(e.clientX, e.clientY);
       e.preventDefault();
     });
+
+    titlebar.addEventListener('touchstart', e => {
+      if (e.target.closest('.window-buttons')) return;
+      dragStart(e.touches[0].clientX, e.touches[0].clientY);
+      e.preventDefault();
+    }, { passive: false });
 
     document.addEventListener('mousemove', e => {
       if (!isDragging) return;
@@ -131,7 +140,20 @@ function initWindows() {
       win.style.top  = (e.clientY - dragOffY) + 'px';
     });
 
+    document.addEventListener('touchmove', e => {
+      if (!isDragging) return;
+      win.style.left = (e.touches[0].clientX - dragOffX) + 'px';
+      win.style.top  = (e.touches[0].clientY - dragOffY) + 'px';
+      e.preventDefault();
+    }, { passive: false });
+
     document.addEventListener('mouseup', () => {
+      if (!isDragging) return;
+      isDragging = false;
+      win.classList.remove('dragging');
+    });
+
+    document.addEventListener('touchend', () => {
       if (!isDragging) return;
       isDragging = false;
       win.classList.remove('dragging');
