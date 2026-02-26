@@ -1220,8 +1220,6 @@ footer a {
    MINESWEEPER
    ============================================================ */
 #msw-window {
-    position: fixed;
-    display: none;
     width: fit-content;
     min-width: 0;
     z-index: 200;
