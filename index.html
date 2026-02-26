@@ -433,6 +433,7 @@
                 <button class="msw-face" id="msw-face" onclick="mswNewGame()">🙂</button>
                 <div class="msw-lcd" id="msw-timer">000</div>
             </div>
+            <div class="msw-best" id="msw-best">Best: --</div>
             <div class="msw-grid" id="msw-grid"></div>
         </div>
 
@@ -456,6 +457,7 @@
                 revealed = mk2d(cfg.rows, cfg.cols, false);
                 flagged  = mk2d(cfg.rows, cfg.cols, false);
                 face('🙂'); lcd('msw-mine-count', minesLeft); lcd('msw-timer', 0);
+                showBest();
                 render();
             }
             function mk2d(r, c, v) {
@@ -533,6 +535,14 @@
                 });
                 if (exploded) { boom(); } else { checkWin(); render(); }
             }
+            function bestKey() { return 'msw_best_' + d; }
+            function getBest() { var v = parseInt(localStorage.getItem(bestKey())); return isNaN(v) ? null : v; }
+            function showBest() {
+                var el = document.getElementById('msw-best');
+                if (!el) return;
+                var b = getBest();
+                el.textContent = b !== null ? 'Best: ' + b + 's' : 'Best: --';
+            }
             function checkWin() {
                 for (var r = 0; r < cfg.rows; r++)
                     for (var c = 0; c < cfg.cols; c++)
@@ -542,6 +552,11 @@
                     for (var c2 = 0; c2 < cfg.cols; c2++)
                         if (board[r2][c2] === -1) flagged[r2][c2] = true;
                 minesLeft = 0; lcd('msw-mine-count', 0);
+                var prev = getBest();
+                if (prev === null || seconds < prev) {
+                    localStorage.setItem(bestKey(), seconds);
+                    showBest();
+                }
             }
             function render() {
                 var grid = document.getElementById('msw-grid');
