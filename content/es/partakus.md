@@ -1,37 +1,38 @@
 ---
-_todo: TRADUCIR — Reemplace todos los textos con traducciones al español
 emoji: 🚗
-title: Head of Projects
-company: Partakus — Automotive Marketplace
+title: Director de Proyectos
+company: Partakus — Marketplace de Automoción
 company_short: Partakus · 2017–2021
-window_title: partakus.md — Head of Projects
-stack_label: Stack & Methods
-metrics_label: Key Metrics
+window_title: partakus.md — Director de Proyectos
+stack_label: Stack & Métodos
+metrics_label: Cifras Clave
+context_label: Contexto
+achievements_label: Logros
 
-pill_1: purple | 📅 September 2017 – February 2021
-pill_2: blue | 📍 Paris, France
-pill_3: orange | 🏢 Automotive · Marketplace
-pill_4: green | 🌍 3 countries deployed
+pill_1: purple | 📅 Septiembre 2017 – Febrero 2021
+pill_2: blue | 📍 París, Francia
+pill_3: orange | 🏢 Automoción · Marketplace
+pill_4: green | 🌍 3 países desplegados
 
-stack: Agile / Scrum, Product discovery, User testing, Prototyping, KPI definition, Jira, Multi-country deployment, B2B marketplace
+stack: Agile / Scrum, Product discovery, Tests de usuario, Prototipado, Definición de KPI, Jira, Despliegue multipaís, Marketplace B2B
 
-metric_1: 3 | Countries deployed | purple
-metric_2: 3 | PMs managed | green
+metric_1: 3 | Países desplegados | purple
+metric_2: 3 | Product Managers gestionados | green
 
 nav_prev_url: kottek.html
-nav_prev_label: Kottek — Founder
+nav_prev_label: Kottek — Fundador
 nav_next_url: palo-it.html
-nav_next_label: Palo IT — BU Manager
+nav_next_label: Palo IT — Responsable BU
 ---
 
 ## Context
 
-Partakus is a B2B digital marketplace in the automotive sector, connecting spare parts dealers and garages across multiple markets. I joined to lead deployment of marketplace services across international markets and bridge Product and Engineering teams.
+Partakus es un marketplace B2B digital en el sector de la automoción, que conecta vendedores de recambios y talleres en varios mercados. Me incorporé para liderar el despliegue de los servicios del marketplace en mercados internacionales y actuar como puente entre los equipos de Producto e Ingeniería.
 
 ## Achievements
 
-- Deployed digital marketplace services across **3 countries** — France, Spain, and Morocco — managing a team of **3 Product Managers**
-- Bridged Product and Engineering: led end-to-end discovery, prototyping, user testing, and requirements definition
-- KPI-driven service delivery — optimized deployment time and cost per market through process standardization
-- Established cross-market product governance to ensure consistency while adapting to local regulatory and business contexts
-- Managed stakeholder relationships across C-suite, operational teams, and external partners in multiple languages
+- Despliegue de los servicios del marketplace en **3 países** — Francia, España y Marruecos — gestionando un equipo de **3 Product Managers**
+- Enlace Producto/Ingeniería: dirección del discovery, prototipado, tests de usuario y definición de requisitos de extremo a extremo
+- Entrega orientada a KPI — optimización de tiempos y costes de despliegue por mercado mediante estandarización de procesos
+- Establecimiento de una gobernanza de producto multi-mercado para garantizar la coherencia adaptándose a los contextos regulatorios locales
+- Gestión de relaciones con stakeholders a todos los niveles — dirección, equipos operativos y socios externos, en varios idiomas

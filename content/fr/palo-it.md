@@ -1,40 +1,41 @@
 ---
-_todo: TRADUIRE — Remplacez tous les textes par des traductions françaises
 emoji: 💼
-title: Business Unit Manager & Pre-Sales Lead
-company: Palo IT — Tech Consultancy (50 people, €12M)
+title: Responsable Business Unit & Avant-Vente
+company: Palo IT — ESN (50 pers., 12 M€ de CA)
 company_short: Palo IT · 2015–2018
-window_title: palo-it.md — Business Unit Manager & Pre-Sales Lead
-stack_label: Stack & Methods
-metrics_label: Key Metrics
-clients_label: Key Clients
+window_title: palo-it.md — Responsable BU & Avant-Vente
+stack_label: Stack & Méthodes
+metrics_label: Chiffres Clés
+context_label: Contexte
+achievements_label: Réalisations
+clients_label: Clients Clés
 clients: Renault, L'Oréal, Boursorama, Group Up
 
-pill_1: blue | 📅 March 2015 – September 2018
+pill_1: blue | 📅 Mars 2015 – Septembre 2018
 pill_2: blue | 📍 Paris, France
-pill_3: purple | 🏢 Tech Consultancy
-pill_4: orange | 👥 10 consultants managed
+pill_3: purple | 🏢 ESN · Conseil Tech
+pill_4: orange | 👥 10 consultants managés
 
-stack: Pre-sales engineering, Enterprise sales, Agile coaching, P&L management, Team management, Consulting delivery
+stack: Ingénierie avant-vente, Vente enterprise, Coaching Agile, Gestion P&L, Management d'équipe, Delivery conseil
 
-metric_1: 10 | Consultants managed | blue
-metric_2: €12M | Company revenue | orange
-metric_3: 4 | Major accounts closed | purple
+metric_1: 10 | Consultants managés | blue
+metric_2: €12M | CA entreprise | orange
+metric_3: 4 | Comptes majeurs signés | purple
 
 nav_prev_url: partakus.html
-nav_prev_label: Partakus — Head of Projects
+nav_prev_label: Partakus — Directeur de Projets
 nav_next_url: libon.html
 nav_next_label: Libon — Product Owner
 ---
 
 ## Context
 
-Palo IT is an international tech consultancy (now 700+ people across Asia, Europe, Middle East). In the Paris office, I wore two hats: running a business unit of 10 consultants while leading pre-sales to land and grow enterprise accounts.
+Palo IT est une ESN internationale (700+ personnes aujourd'hui en Asie, Europe, Moyen-Orient). Sur le bureau parisien, j'occupais deux rôles : la direction d'une business unit de 10 consultants et la conduite de l'avant-vente pour signer et développer des comptes grands comptes.
 
 ## Achievements
 
-- Pre-sales engineer: sourced, pitched, and closed engagements with **Renault**, **L'Oréal**, **Boursorama**, and **Group Up**
-- Managed a business unit of **10 consultants** across product, engineering, and design disciplines
-- Contributed to company-level business strategy for the Paris office
-- Built and maintained a strong enterprise sales pipeline in fast-moving competitive contexts
-- Delivered complex project scoping and technical proposals for digital transformation engagements
+- Ingénieur avant-vente : sourcing, présentation et closing de missions auprès de **Renault**, **L'Oréal**, **Boursorama** et **Group Up**
+- Management d'une business unit de **10 consultants** dans les disciplines produit, engineering et design
+- Contribution à la stratégie d'entreprise au niveau de l'entité parisienne
+- Construction et animation d'un pipeline commercial grand compte en contexte concurrentiel
+- Rédaction de propositions techniques complexes pour des missions de transformation digitale

@@ -1,34 +1,35 @@
 ---
-_todo: TRADUCIR — Reemplace todos los textos con traducciones al español
 emoji: 🔧
-title: Solution Engineer
-company: Niji — Tech Consultancy
+title: Ingeniero de Soluciones
+company: Niji — Consultoría Tech
 company_short: Niji · 2006–2010
-window_title: niji.md — Solution Engineer
-stack_label: Technologies
-clients_label: Key Clients
+window_title: niji.md — Ingeniero de Soluciones
+stack_label: Tecnologías
+context_label: Contexto
+achievements_label: Logros
+clients_label: Clientes Clave
 clients: Crédit Mutuel, Orange Business Services
 
-pill_1: purple | 📅 February 2006 – January 2010
-pill_2: blue | 📍 Rennes, France
-pill_3: orange | 🏢 Tech Consultancy · Telecom
+pill_1: purple | 📅 Febrero 2006 – Enero 2010
+pill_2: blue | 📍 Rennes, Francia
+pill_3: orange | 🏢 Consultoría Tech · Telco
 
-stack: Telecom platforms, Solution architecture, Middleware, Systems integration, Acceptance testing
+stack: Plataformas telco, Arquitectura de soluciones, Middleware, Integración de sistemas, Tests de aceptación
 
 nav_prev_url: orange-spain.html
-nav_prev_label: Orange Spain — Test Manager
-nav_next_dir: ↑ Back to
+nav_prev_label: Orange Spain — Responsable de Tests
+nav_next_dir: ↑ Volver a
 nav_next_url: ../index.html#experience
-nav_next_label: All Experience
+nav_next_label: Toda la experiencia
 ---
 
 ## Context
 
-Niji (formerly Sqli Group Bretagne) is a major French digital services and consulting firm. This was my first professional role after graduating from Telecom Bretagne, where I applied my engineering background to real-world telecom platform consulting.
+Niji (anteriormente Sqli Group Bretagne) es una gran empresa francesa de servicios digitales y consultoría. Fue mi primer puesto profesional tras graduarme de Telecom Bretagne, donde apliqué mi formación de ingeniería en consultoría real de plataformas telco.
 
 ## Achievements
 
-- Provided technical consulting on telecom platforms for major clients including **Crédit Mutuel** and **Orange Business Services**
-- Designed and implemented solution architectures for telecom middleware and integration layers
-- Bridged technical teams and business stakeholders — an early foundation for the PM/hybrid roles ahead
-- Delivered across the full project lifecycle: requirements, architecture, implementation, and acceptance testing
+- Consultoría técnica en plataformas telco para clientes de referencia como **Crédit Mutuel** y **Orange Business Services**
+- Diseño e implementación de arquitecturas de soluciones para capas de middleware e integración telco
+- Puente entre equipos técnicos y stakeholders de negocio — base de mi evolución hacia roles de PM e híbridos
+- Entrega en todo el ciclo de proyecto: requisitos, arquitectura, implementación y pruebas de aceptación

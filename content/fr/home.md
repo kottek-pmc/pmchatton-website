@@ -1,16 +1,15 @@
 ---
-_todo: TRADUIRE — Remplacez tous les textes par des traductions françaises
-tagline: // product manager · builder · data nerd
+tagline: // chef de produit · builder · data geek
 name: Pierre-Marie
 name2: Chatton
-role: Managing Director · Product Manager · Founder
+role: Directeur Général · Product Manager · Fondateur
 
-stat_1: 15+ | Years exp.
-stat_2: 7 | Companies
-stat_3: 4 | Languages
-stat_4: €2M | Max P&L
+stat_1: 15+ | Ans d'exp.
+stat_2: 7 | Entreprises
+stat_3: 4 | Langues
+stat_4: €2M | P&L max
 ---
 
 ## Summary
 
-15+ years building and shipping B2B/SaaS products — from establishing a fintech subsidiary (16 people, **€2M turnover**) to payment features that reached **40%** of service revenue in 6 months. Hands-on technical PM (Python, SQL, APIs) with deep experience in data-intensive products and compliance-sensitive environments.
+Plus de 15 ans en conception et lancement de produits B2B/SaaS — de la création d'une filiale fintech (16 pers., **2 M€ de CA**) au lancement de fonctionnalités de paiement atteignant **40 %** du revenu du service en 6 mois. PM technique (Python, SQL, APIs) avec expertise en produits data et environnements conformité (SOC2, ISO 27001).

@@ -1,40 +1,41 @@
 ---
-_todo: TRADUCIR — Reemplace todos los textos con traducciones al español
 emoji: 💼
-title: Business Unit Manager & Pre-Sales Lead
-company: Palo IT — Tech Consultancy (50 people, €12M)
+title: Responsable de Business Unit & Preventa
+company: Palo IT — Consultoría Tech (50 pers., 12 M€)
 company_short: Palo IT · 2015–2018
-window_title: palo-it.md — Business Unit Manager & Pre-Sales Lead
-stack_label: Stack & Methods
-metrics_label: Key Metrics
-clients_label: Key Clients
+window_title: palo-it.md — Responsable BU & Preventa
+stack_label: Stack & Métodos
+metrics_label: Cifras Clave
+context_label: Contexto
+achievements_label: Logros
+clients_label: Clientes Clave
 clients: Renault, L'Oréal, Boursorama, Group Up
 
-pill_1: blue | 📅 March 2015 – September 2018
-pill_2: blue | 📍 Paris, France
-pill_3: purple | 🏢 Tech Consultancy
-pill_4: orange | 👥 10 consultants managed
+pill_1: blue | 📅 Marzo 2015 – Septiembre 2018
+pill_2: blue | 📍 París, Francia
+pill_3: purple | 🏢 Consultoría Tech
+pill_4: orange | 👥 10 consultores gestionados
 
-stack: Pre-sales engineering, Enterprise sales, Agile coaching, P&L management, Team management, Consulting delivery
+stack: Ingeniería de preventa, Venta enterprise, Coaching Agile, Gestión P&L, Gestión de equipos, Entrega en consultoría
 
-metric_1: 10 | Consultants managed | blue
-metric_2: €12M | Company revenue | orange
-metric_3: 4 | Major accounts closed | purple
+metric_1: 10 | Consultores gestionados | blue
+metric_2: €12M | Facturación empresa | orange
+metric_3: 4 | Cuentas clave cerradas | purple
 
 nav_prev_url: partakus.html
-nav_prev_label: Partakus — Head of Projects
+nav_prev_label: Partakus — Director de Proyectos
 nav_next_url: libon.html
 nav_next_label: Libon — Product Owner
 ---
 
 ## Context
 
-Palo IT is an international tech consultancy (now 700+ people across Asia, Europe, Middle East). In the Paris office, I wore two hats: running a business unit of 10 consultants while leading pre-sales to land and grow enterprise accounts.
+Palo IT es una consultoría tecnológica internacional (hoy 700+ personas en Asia, Europa y Oriente Medio). En la oficina de París, ocupaba dos roles: la dirección de una business unit de 10 consultores y la conducción de la preventa para captar y desarrollar cuentas enterprise.
 
 ## Achievements
 
-- Pre-sales engineer: sourced, pitched, and closed engagements with **Renault**, **L'Oréal**, **Boursorama**, and **Group Up**
-- Managed a business unit of **10 consultants** across product, engineering, and design disciplines
-- Contributed to company-level business strategy for the Paris office
-- Built and maintained a strong enterprise sales pipeline in fast-moving competitive contexts
-- Delivered complex project scoping and technical proposals for digital transformation engagements
+- Ingeniero de preventa: captación, presentación y cierre de proyectos con **Renault**, **L'Oréal**, **Boursorama** y **Group Up**
+- Gestión de una business unit de **10 consultores** en disciplinas de producto, ingeniería y diseño
+- Contribución a la estrategia de empresa a nivel de la entidad parisina
+- Construcción y animación de un pipeline comercial enterprise en entorno competitivo
+- Elaboración de propuestas técnicas complejas para proyectos de transformación digital

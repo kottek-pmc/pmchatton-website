@@ -1,37 +1,38 @@
 ---
-_todo: TRADUCIR — Reemplace todos los textos con traducciones al español
 emoji: 🚀
-title: Founder & Managing Director
-company: Kottek — Product & Project Management Consultancy
-company_short: Kottek · 2018–Present
-window_title: kottek.md — Founder & Managing Director
-stack_label: Capabilities Delivered to Clients
-metrics_label: Key Metrics
+title: Fundador & Director General
+company: Kottek — Consultoría de Product & Project Management
+company_short: Kottek · 2018–Presente
+window_title: kottek.md — Fundador & Director General
+stack_label: Servicios a Clientes
+metrics_label: Cifras Clave
+context_label: Contexto
+achievements_label: Logros
 
-pill_1: orange | 📅 October 2018 – Present
-pill_2: blue | 📍 Paris, France
-pill_3: purple | 🏢 Consultancy
-pill_4: green | 👥 5 employees · €500K revenue
+pill_1: orange | 📅 Octubre 2018 – Presente
+pill_2: blue | 📍 París, Francia
+pill_3: purple | 🏢 Consultoría
+pill_4: green | 👥 5 empleados · 500 K€ de facturación
 
-stack: Product roadmap definition, Discovery & user research, Sprint facilitation, Technical pre-sales, Team building, Stakeholder management, OKR setup
+stack: Definición de roadmap de producto, Discovery e investigación de usuarios, Facilitación de sprints, Preventa técnica, Construcción de equipos, Gestión de stakeholders, Implementación de OKR
 
-metric_1: €500K | Revenue achieved | orange
-metric_2: 5 | Employees | green
-metric_3: 6+ | Years running | blue
+metric_1: €500K | Facturación alcanzada | orange
+metric_2: 5 | Empleados | green
+metric_3: 6+ | Años en activo | blue
 
 nav_prev_url: nuant.html
-nav_prev_label: Nuant — PM / MD
+nav_prev_label: Nuant — PM / DG
 nav_next_url: partakus.html
-nav_next_label: Partakus — Head of Projects
+nav_next_label: Partakus — Director de Proyectos
 ---
 
 ## Context
 
-Kottek is a boutique consultancy I founded to bring senior Product and Project Management expertise to growing tech companies. Running in parallel with my role at Nuant, it reflects my commitment to building sustainable independent work alongside embedded leadership roles.
+Kottek es una consultoría boutique que fundé para aportar experiencia senior en Product y Project Management a empresas tecnológicas en crecimiento. Activa en paralelo con mi rol en Nuant, refleja mi convicción de construir trabajo independiente sostenible junto a posiciones de liderazgo embedded.
 
 ## Achievements
 
-- Founded the consultancy from zero — grew revenue to **€500K** with **5 employees**
-- Full ownership of the sales pipeline: prospecting, pitching, scoping, closing, and delivery
-- Built a network of senior PM and engineering consultants for project-based staffing
-- Managed end-to-end client relationships across fintech, automotive, and B2B SaaS sectors
+- Fundación de la consultoría desde cero — facturación llevada a **€500K** con **5 empleados**
+- Gestión integral del pipeline comercial: prospección, presentación, definición de alcance, cierre y entrega
+- Construcción de una red de consultores senior de PM e ingeniería para staffing por proyectos
+- Gestión de relaciones con clientes de extremo a extremo en sectores fintech, automoción y B2B SaaS

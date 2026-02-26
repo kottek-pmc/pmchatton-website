@@ -1,41 +1,42 @@
 ---
-_todo: TRADUIRE — Remplacez tous les textes par des traductions françaises
 emoji: 🏦
-title: PM / Managing Director
-company: Nuant — SaaS for digital asset managers
+title: Product Manager / Directeur Général
+company: Nuant — SaaS pour asset managers digitaux
 company_short: Nuant · 2021–2025
-window_title: nuant.md — PM / Managing Director
-stack_label: Stack & Tools
-metrics_label: Key Metrics
+window_title: nuant.md — Product Manager / Directeur Général
+stack_label: Stack & Outils
+metrics_label: Chiffres Clés
+context_label: Contexte
+achievements_label: Réalisations
 
-pill_1: green | 📅 March 2021 – October 2025
-pill_2: blue | 📍 Paris / Zug
+pill_1: green | 📅 Mars 2021 – Octobre 2025
+pill_2: blue | 📍 Paris / Zoug
 pill_3: orange | 🏢 Fintech · B2B SaaS
-pill_4: purple | 👥 16 employees · €2M turnover
+pill_4: purple | 👥 16 collaborateurs · 2 M€ de CA
 
-stack: Python, SQL, REST APIs, Real-time data streams, SOC2, ISO 27001, Jira, Figma, Agile / Scrum, Data pipelines, Monitoring dashboards
+stack: Python, SQL, REST APIs, Flux temps réel, SOC2, ISO 27001, Jira, Figma, Agile / Scrum, Pipelines de données, Dashboards de monitoring
 
-metric_1: 16 | Employees scaled to | green
-metric_2: €2M | Annual turnover | orange
-metric_3: 150+ | Simulator users | blue
-metric_4: 3 | Data products shipped | purple
+metric_1: 16 | Collaborateurs à terme | green
+metric_2: €2M | Chiffre d'affaires annuel | orange
+metric_3: 150+ | Utilisateurs simulateur | blue
+metric_4: 3 | Produits data livrés | purple
 
-nav_prev_dir: ← Back
+nav_prev_dir: ← Retour
 nav_prev_url: ../index.html#experience
-nav_prev_label: All Experience
+nav_prev_label: Toute l'expérience
 nav_next_url: kottek.html
-nav_next_label: Kottek — Founder
+nav_next_label: Kottek — Fondateur
 ---
 
 ## Context
 
-Nuant is a B2B SaaS platform serving institutional digital asset managers — hedge funds, family offices, and trading desks. I was brought in to establish the French subsidiary from the ground up and lead product strategy across three flagship data products.
+Nuant est une plateforme B2B SaaS dédiée aux gestionnaires institutionnels d'actifs digitaux — hedge funds, family offices et desks de trading. J'ai été recruté pour créer la filiale française de zéro et piloter la stratégie produit sur trois produits data phares.
 
 ## Achievements
 
-- Established Nuant France from scratch — scaled from 0 to **16 employees** and **€2M turnover** with full P&L ownership
-- Led product strategy for **3 data products** (simulator, real-time streams, monitoring dashboards) with a team of **10 engineers**
-- Built the data stream product from 0 to standalone business — spun off as a self-sustaining revenue line
-- Grew the simulator from **0 to 150+ users** through iterative product development and direct customer feedback loops
-- Developed analytics dashboards (Python, SQL) used daily by quantitative analysis teams at institutional clients
-- Led **SOC2 and ISO 27001** certification — designed audit trails and governance features that became enterprise sales enablers
+- Création de Nuant France de zéro — montée en charge à **16 collaborateurs** et **2 M€ de CA** avec responsabilité P&L complète
+- Pilotage de la stratégie produit pour **3 produits data** (simulateur, flux temps réel, dashboards de monitoring) avec une équipe de **10 ingénieurs**
+- Construction du produit data stream de 0 à activité autonome — spin-off en ligne de revenu indépendante
+- Simulateur porté de **0 à 150+ utilisateurs** par développement itératif et boucles de feedback client directs
+- Développement de dashboards analytiques (Python, SQL) utilisés quotidiennement par les équipes quant des clients institutionnels
+- Conduite des certifications **SOC2 et ISO 27001** — conception des pistes d'audit et fonctionnalités de gouvernance devenues leviers de vente enterprise
