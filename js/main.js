@@ -183,6 +183,7 @@ function initWindows() {
     // ── Close button (red) ────────────────────────────────
     win.querySelector('.btn-close')
       ?.addEventListener('click', () => {
+        win._placeholder = placeholder;
         win.style.display = 'none';
         if (placeholder) placeholder.style.display = 'none';
       });
@@ -238,6 +239,16 @@ function initDesktopIcons() {
     icon.addEventListener('click', () => {
       document.querySelectorAll('.desktop-icon').forEach(i => i.classList.remove('selected'));
       icon.classList.add('selected');
+
+      // Reopen window if it was closed
+      const href = icon.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        const win = document.querySelector(href + ' .window');
+        if (win && win.style.display === 'none') {
+          win.style.display = '';
+          if (win._placeholder) win._placeholder.style.display = '';
+        }
+      }
     });
   });
   // Deselect on desktop click

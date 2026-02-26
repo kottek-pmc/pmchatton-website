@@ -81,6 +81,9 @@ body {
     font-size: 13px;
     line-height: 1.5;
     color: var(--color-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     /* Amiga-style blue desktop */
     background-color: var(--desktop);
     background-image:
@@ -176,6 +179,7 @@ a:hover {
     max-width: var(--max-width);
     margin-left: auto;
     margin-right: auto;
+    flex: 1;
 }
 
 .container {
