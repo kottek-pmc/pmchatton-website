@@ -4,7 +4,7 @@ name: Pierre-Marie
 name2: Chatton
 role: Managing Director · Product Manager · Founder
 
-stat_1: 20 | Years exp.
+stat_1: {{years_exp}} | Years exp.
 stat_2: 7 | Companies
 stat_3: 4 | Languages
 ---

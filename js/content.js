@@ -4,6 +4,8 @@
 // ============================================================
 (function () {
 
+  var EXP_START_YEAR = 2005;
+
   // ── Language detection ────────────────────────────────────
   function detectLang() {
     const param = new URLSearchParams(location.search).get('lang');
@@ -211,10 +213,63 @@
     });
   }
 
+  // ── Skills loader (from content/skills.json) ─────────────
+  function loadSkills() {
+    var base = isExpPage ? '..' : '.';
+    fetch(base + '/content/skills.json')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (!data) return;
+
+        var skillsEl = el('skills-grid');
+        if (skillsEl && data.skills) {
+          skillsEl.innerHTML = data.skills.map(function (card) {
+            return '<div class="skill-card">' +
+              '<div class="skill-card-header">' +
+              '<div class="skill-icon">' + card.icon + '</div>' +
+              '<div class="skill-card-title">' + card.title + '</div>' +
+              '</div><div class="skill-items">' +
+              card.items.map(function (item) {
+                return '<span class="skill-badge">' + item + '</span>';
+              }).join('') +
+              '</div></div>';
+          }).join('');
+        }
+
+        var langEl = el('lang-grid');
+        if (langEl && data.languages) {
+          langEl.innerHTML = data.languages.map(function (l) {
+            return '<div class="lang-card">' +
+              '<div class="lang-name">' + l.flag + ' ' + l.name + '</div>' +
+              '<div class="lang-level">' + l.level + '</div>' +
+              '</div>';
+          }).join('');
+        }
+
+        var eduEl = el('education-block');
+        if (eduEl && data.education) {
+          var cards = data.education.map(function (e) {
+            return '<div style="display:flex;gap:10px;align-items:flex-start;padding:10px 12px;' +
+              'background:var(--color-surface-2);border:1px solid;' +
+              'border-color:#888884 #ffffff #ffffff #888884;border-radius:2px;flex:1;min-width:220px">' +
+              '<span style="font-size:24px;flex-shrink:0">' + e.icon + '</span><div>' +
+              '<div style="font-weight:bold;font-size:13px;color:var(--color-text)">' + e.degree + '</div>' +
+              '<div style="font-size:11px;color:var(--color-text-muted)">' + e.school + '</div>' +
+              '<div style="font-family:var(--font-mono);font-size:10px;color:var(--color-text-subtle)">' + e.period + '</div>' +
+              '</div></div>';
+          }).join('');
+          eduEl.innerHTML = '<div style="display:flex;flex-wrap:wrap;gap:10px">' + cards + '</div>';
+        }
+      });
+  }
+
   // ── Home page loader ──────────────────────────────────────
   function loadHomePage() {
     fetchContent(lang, 'home').then(function (text) {
       if (!text) return;
+      // Replace {{years_exp}} with computed value
+      var years = new Date().getFullYear() - EXP_START_YEAR;
+      text = text.replace(/\{\{years_exp\}\}/g, years);
       var parsed = parseMd(text);
       var fm = parsed.fm;
       var sections = parsed.sections;
@@ -260,6 +315,7 @@
       loadExpPage();
     } else {
       loadHomePage();
+      loadSkills();
     }
   });
 

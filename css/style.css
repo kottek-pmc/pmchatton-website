@@ -1014,6 +1014,19 @@ footer a {
     box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.55);
 }
 
+/* Maximized: fill viewport, content scrolls */
+.window.maximized {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    box-shadow: none;
+}
+.window.maximized > *:not(.window-titlebar) {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+}
+
 /* Collapsed: show only the titlebar */
 .window.collapsed > :not(.window-titlebar) {
     display: none;

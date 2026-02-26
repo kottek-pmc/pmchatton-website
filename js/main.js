@@ -15,13 +15,14 @@ updateClock();
 // ============================================================
 //  Terminal typewriter
 // ============================================================
+const expYears = new Date().getFullYear() - 2005;
 const terminalLines = [
   { delay: 300,  type: 'cmd',      text: 'cat profile.json' },
   { delay: 600,  type: 'open',     text: '{' },
   { delay: 780,  type: 'kv',       key: '"name"',        value: '"Pierre-Marie Chatton"' },
   { delay: 920,  type: 'kv',       key: '"role"',         value: '"Product Manager / Managing Director"' },
   { delay: 1060, type: 'kv',       key: '"location"',     value: '"Plouézec, France"' },
-  { delay: 1200, type: 'kv',       key: '"experience"',   value: '"20 years"' },
+  { delay: 1200, type: 'kv',       key: '"experience"',   value: '"' + expYears + ' years"' },
   { delay: 1340, type: 'kv',       key: '"languages"',    value: '["French", "English", "Spanish", "German"]' },
   { delay: 1480, type: 'kv',       key: '"specialties"',  value: '["0→1 products", "B2B SaaS", "Data", "Compliance"]' },
   { delay: 1620, type: 'close',    text: '}' },
@@ -138,6 +139,46 @@ function initWindows() {
     // ── Minimize button (yellow) ──────────────────────────
     win.querySelector('.btn-minimize')
       ?.addEventListener('click', () => toggleCollapse(win, placeholder));
+
+    // ── Maximize button (green) ───────────────────────────
+    let isMaximized = false;
+    let preMaxState = {};
+    win.querySelector('.btn-maximize')
+      ?.addEventListener('click', () => {
+        if (!isMaximized) {
+          // Float first if not already
+          if (!isFloating) {
+            const rect = win.getBoundingClientRect();
+            placeholder = document.createElement('div');
+            placeholder.style.cssText =
+              `width:${rect.width}px;height:${rect.height}px;flex-shrink:0;pointer-events:none;visibility:hidden`;
+            win.parentNode.insertBefore(placeholder, win);
+            win.style.position = 'fixed';
+            win.style.left   = rect.left + 'px';
+            win.style.top    = rect.top  + 'px';
+            win.style.width  = rect.width + 'px';
+            win.style.margin = '0';
+            win.classList.add('floating');
+            isFloating = true;
+          }
+          preMaxState = { left: win.style.left, top: win.style.top, width: win.style.width, height: win.style.height };
+          const barH = document.querySelector('.menubar')?.offsetHeight || 26;
+          win.style.left   = '0';
+          win.style.top    = barH + 'px';
+          win.style.width  = '100vw';
+          win.style.height = `calc(100vh - ${barH}px)`;
+          win.style.zIndex = ++globalZ;
+          win.classList.add('maximized');
+          isMaximized = true;
+        } else {
+          win.style.left   = preMaxState.left;
+          win.style.top    = preMaxState.top;
+          win.style.width  = preMaxState.width;
+          win.style.height = preMaxState.height;
+          win.classList.remove('maximized');
+          isMaximized = false;
+        }
+      });
 
     // ── Close button (red) ────────────────────────────────
     win.querySelector('.btn-close')
