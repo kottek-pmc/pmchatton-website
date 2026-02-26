@@ -22,7 +22,7 @@ metric_2: 3 | Product Managers gestionados | green
 nav_prev_url: kottek.html
 nav_prev_label: Kottek — Fundador
 nav_next_url: palo-it.html
-nav_next_label: Palo IT — Responsable BU
+nav_next_label: Palo IT — Hive Master
 ---
 
 ## Context
@@ -32,7 +32,7 @@ Partakus es un marketplace B2B digital en el sector de la automoción, que conec
 ## Achievements
 
 - Despliegue de los servicios del marketplace en **3 países** — Francia, España y Marruecos — gestionando un equipo de **3 Product Managers**
-- Enlace Producto/Ingeniería: dirección del discovery, prototipado, tests de usuario y definición de requisitos de extremo a extremo
+- Enlace Producto/Ingeniería: discovery, prototipado, tests de usuario y definición de requisitos de extremo a extremo
 - Entrega orientada a KPI — optimización de tiempos y costes de despliegue por mercado mediante estandarización de procesos
 - Establecimiento de una gobernanza de producto multi-mercado para garantizar la coherencia adaptándose a los contextos regulatorios locales
 - Gestión de relaciones con stakeholders a todos los niveles — dirección, equipos operativos y socios externos, en varios idiomas

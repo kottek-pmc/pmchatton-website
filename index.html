@@ -1,417 +1,609 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pierre-Marie Chatton — Product Manager</title>
-  <meta name="description" content="Pierre-Marie Chatton — Product Manager with 15+ years building B2B/SaaS products. Fintech, data platforms, 0→1 products.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pierre-Marie Chatton — Product Manager</title>
+        <meta
+            name="description"
+            content="Pierre-Marie Chatton — Product Manager with 15+ years building B2B/SaaS products. Fintech, data platforms, 0→1 products."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- ── Screen Bar ────────────────────────────────────────── -->
+        <nav class="menubar">
+            <div class="menubar-left">
+                <a href="index.html" class="menu-item active">pmchatton</a>
+                <a href="#about" class="menu-item">About</a>
+                <a href="#experience" class="menu-item">Experience</a>
+                <a href="#skills" class="menu-item">Skills</a>
+                <a href="#contact" class="menu-item">Contact</a>
+            </div>
+            <div class="menubar-right">
+                <div class="lang-switcher" id="lang-switcher"></div>
+                <span class="menu-clock" id="clock"></span>
+            </div>
+        </nav>
 
-<!-- ── Screen Bar ────────────────────────────────────────── -->
-<nav class="menubar">
-  <div class="menubar-left">
-    <a href="index.html" class="menu-item active">pmchatton</a>
-    <a href="#about" class="menu-item">About</a>
-    <a href="#experience" class="menu-item">Experience</a>
-    <a href="#skills" class="menu-item">Skills</a>
-    <a href="#contact" class="menu-item">Contact</a>
-  </div>
-  <div class="menubar-right">
-    <div class="lang-switcher" id="lang-switcher"></div>
-    <span class="menu-clock" id="clock"></span>
-  </div>
-</nav>
+        <div class="content-wrap">
+            <!-- ── Desktop Icons ─────────────────────────────────────── -->
+            <div class="desktop-icons">
+                <a href="#about" class="desktop-icon">
+                    <div class="icon-img">👤</div>
+                    <span class="icon-lbl">about.txt</span>
+                </a>
+                <a href="#experience" class="desktop-icon">
+                    <div class="icon-img">🗂️</div>
+                    <span class="icon-lbl">experience</span>
+                </a>
+                <a href="#skills" class="desktop-icon">
+                    <div class="icon-img">⚙️</div>
+                    <span class="icon-lbl">skills.json</span>
+                </a>
+                <a href="#contact" class="desktop-icon">
+                    <div class="icon-img">✉️</div>
+                    <span class="icon-lbl">contact</span>
+                </a>
+                <a
+                    href="https://www.kottek.biz/"
+                    target="_blank"
+                    rel="noopener"
+                    class="desktop-icon"
+                >
+                    <div class="icon-img">🖼️</div>
+                    <span class="icon-lbl">portfolio</span>
+                </a>
+            </div>
 
-<div class="content-wrap">
+            <!-- ── Hero: two windows on the desktop ─────────────────── -->
+            <section class="section hero-section" id="about">
+                <div class="hero-intro">
+                    <!-- About window -->
+                    <div class="window">
+                        <div class="window-titlebar">
+                            <div class="window-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <span class="window-title"
+                                >about.txt — Pierre-Marie Chatton</span
+                            >
+                        </div>
+                        <div class="window-content">
+                            <div class="hero-tagline" id="hero-tagline">
+                                // product manager · builder · data nerd
+                            </div>
+                            <h1 class="hero-name" id="hero-name">
+                                Pierre-Marie<br />Chatton
+                            </h1>
+                            <div class="hero-role" id="hero-role">
+                                Managing Director · Product Manager · Founder
+                            </div>
+                            <p class="hero-summary" id="hero-summary">
+                                20 years building and shipping B2B/SaaS products
+                                — from technical expertise to entrepreneurship,
+                                with international project management,
+                                pre-sales, product management background.
+                                Hands-on technical PM (Python, SQL, APIs) with
+                                deep experience in data-intensive products and
+                                compliance-sensitive environments.
+                            </p>
+                            <div class="hero-actions">
+                                <a href="#experience" class="btn btn-primary"
+                                    >View Experience</a
+                                >
+                                <a href="#contact" class="btn btn-secondary"
+                                    >Get in Touch</a
+                                >
+                            </div>
+                            <div class="stats-row" id="stats-row">
+                                <div class="stat">
+                                    <span class="stat-value">20</span>
+                                    <span class="stat-label">Years exp.</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">7</span>
+                                    <span class="stat-label">Companies</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">4</span>
+                                    <span class="stat-label">Languages</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-  <!-- ── Desktop Icons ─────────────────────────────────────── -->
-  <div class="desktop-icons">
-    <a href="#about" class="desktop-icon">
-      <div class="icon-img">👤</div>
-      <span class="icon-lbl">about.txt</span>
-    </a>
-    <a href="#experience" class="desktop-icon">
-      <div class="icon-img">🗂️</div>
-      <span class="icon-lbl">experience</span>
-    </a>
-    <a href="#skills" class="desktop-icon">
-      <div class="icon-img">⚙️</div>
-      <span class="icon-lbl">skills.json</span>
-    </a>
-    <a href="#contact" class="desktop-icon">
-      <div class="icon-img">✉️</div>
-      <span class="icon-lbl">contact</span>
-    </a>
-    <a href="https://www.kottek.biz/" target="_blank" rel="noopener" class="desktop-icon">
-      <div class="icon-img">🖼️</div>
-      <span class="icon-lbl">portfolio</span>
-    </a>
-  </div>
+                    <!-- Terminal window -->
+                    <div class="window">
+                        <div class="window-titlebar">
+                            <div class="window-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <span class="window-title"
+                                >Terminal — bash 80×24</span
+                            >
+                        </div>
+                        <div
+                            class="terminal"
+                            id="terminal-scroll"
+                            style="max-height: 380px; overflow-y: auto"
+                        >
+                            <div id="terminal-output"></div>
+                            <div class="terminal-line" id="terminal-input">
+                                <span class="prompt">pmc@pmchatton:~$</span
+                                >&nbsp;<span class="cursor-blink">▋</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  <!-- ── Hero: two windows on the desktop ─────────────────── -->
-  <section class="section hero-section" id="about">
-    <div class="hero-intro">
+            <!-- ── Experience window ─────────────────────────────────── -->
+            <section class="section" id="experience">
+                <div class="window">
+                    <div class="window-titlebar">
+                        <div class="window-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <span class="window-title">Tracker — Experience</span>
+                    </div>
+                    <div class="section-header">
+                        <span class="section-tag">ls -la</span>
+                        <h2 class="section-title">Experience</h2>
+                    </div>
+                    <div class="exp-list">
+                        <div class="exp-list-header">
+                            <span>Period</span>
+                            <span>Role · Company</span>
+                            <span>Location</span>
+                            <span>Type</span>
+                        </div>
 
-      <!-- About window -->
-      <div class="window">
-        <div class="window-titlebar">
-          <div class="window-buttons">
-            <span class="btn-close"></span>
-            <span class="btn-minimize"></span>
-            <span class="btn-maximize"></span>
-          </div>
-          <span class="window-title">about.txt — Pierre-Marie Chatton</span>
+                        <a href="experience/nuant.html" class="exp-row">
+                            <span class="exp-date">2021 → 2025</span>
+                            <span class="exp-name-wrap">
+                                <span class="exp-title"
+                                    >PM / Managing Director</span
+                                >
+                                <span class="exp-company"
+                                    >Nuant — SaaS for digital asset
+                                    managers</span
+                                >
+                            </span>
+                            <span class="exp-location">Paris / Zug</span>
+                            <span class="exp-type-wrap"
+                                ><span class="exp-type type-pm">PM</span
+                                ><span class="exp-type type-director"
+                                    >Director</span
+                                ></span
+                            >
+                        </a>
+
+                        <a href="experience/kottek.html" class="exp-row">
+                            <span class="exp-date">2018 → now</span>
+                            <span class="exp-name-wrap">
+                                <span class="exp-title"
+                                    >Founder &amp; Managing Director</span
+                                >
+                                <span class="exp-company"
+                                    >Kottek — Product &amp; PM consultancy</span
+                                >
+                            </span>
+                            <span class="exp-location">Paris</span>
+                            <span class="exp-type-wrap"
+                                ><span class="exp-type type-founder"
+                                    >Founder</span
+                                ><span class="exp-type type-director"
+                                    >Director</span
+                                ></span
+                            >
+                        </a>
+
+                        <a href="experience/partakus.html" class="exp-row">
+                            <span class="exp-date">2017 → 2021</span>
+                            <span class="exp-name-wrap">
+                                <span class="exp-title">Head of Projects</span>
+                                <span class="exp-company"
+                                    >Partakus — Automotive marketplace</span
+                                >
+                            </span>
+                            <span class="exp-location">Paris</span>
+                            <span class="exp-type-wrap"
+                                ><span class="exp-type type-director"
+                                    >Director</span
+                                ></span
+                            >
+                        </a>
+
+                        <a href="experience/palo-it.html" class="exp-row">
+                            <span class="exp-date">2015 → 2018</span>
+                            <span class="exp-name-wrap">
+                                <span class="exp-title"
+                                    >Hive Master, Pre-Sales and Consultant</span
+                                >
+                                <span class="exp-company"
+                                    >Palo IT — Tech consultancy</span
+                                >
+                            </span>
+                            <span class="exp-location">Paris</span>
+                            <span class="exp-type-wrap"
+                                ><span class="exp-type type-manager"
+                                    >Manager</span
+                                ></span
+                            >
+                        </a>
+
+                        <a href="experience/libon.html" class="exp-row">
+                            <span class="exp-date">2014 → 2017</span>
+                            <span class="exp-name-wrap">
+                                <span class="exp-title">Product Owner</span>
+                                <span class="exp-company"
+                                    >Libon — Orange Group</span
+                                >
+                            </span>
+                            <span class="exp-location">Châtillon, France</span>
+                            <span class="exp-type-wrap"
+                                ><span class="exp-type type-pm">PM</span></span
+                            >
+                        </a>
+
+                        <a href="experience/orange-spain.html" class="exp-row">
+                            <span class="exp-date">2008 → 2014</span>
+                            <span class="exp-name-wrap">
+                                <span class="exp-title"
+                                    >Test &amp; Validation Manager</span
+                                >
+                                <span class="exp-company">Orange Spain</span>
+                            </span>
+                            <span class="exp-location">Barcelona</span>
+                            <span class="exp-type-wrap"
+                                ><span class="exp-type type-manager"
+                                    >Manager</span
+                                ><span class="exp-type type-engineer"
+                                    >Engineer</span
+                                ></span
+                            >
+                        </a>
+
+                        <a href="experience/niji.html" class="exp-row">
+                            <span class="exp-date">2006 → 2010</span>
+                            <span class="exp-name-wrap">
+                                <span class="exp-title">Solution Engineer</span>
+                                <span class="exp-company"
+                                    >Niji — Tech consultancy</span
+                                >
+                            </span>
+                            <span class="exp-location">Rennes, France</span>
+                            <span class="exp-type-wrap"
+                                ><span class="exp-type type-engineer"
+                                    >Engineer</span
+                                ></span
+                            >
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── Skills window ─────────────────────────────────────── -->
+            <section class="section" id="skills">
+                <div class="window">
+                    <div class="window-titlebar">
+                        <div class="window-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <span class="window-title">skills.json — Profile</span>
+                    </div>
+
+                    <div class="section-header">
+                        <span class="section-tag">cat</span>
+                        <h2 class="section-title">Skills &amp; Profile</h2>
+                    </div>
+
+                    <div class="window-content" style="padding-top: 12px">
+                        <!-- Skills grid -->
+                        <div class="section-sub" style="margin-bottom: 10px">
+                            Core Skills
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-card-header">
+                                    <div class="skill-icon">🗺</div>
+                                    <div class="skill-card-title">
+                                        Product Strategy
+                                    </div>
+                                </div>
+                                <div class="skill-items">
+                                    <span class="skill-badge"
+                                        >Roadmap ownership</span
+                                    >
+                                    <span class="skill-badge">0→1 builds</span>
+                                    <span class="skill-badge"
+                                        >Prioritization</span
+                                    >
+                                    <span class="skill-badge"
+                                        >Competitive analysis</span
+                                    >
+                                    <span class="skill-badge"
+                                        >User research</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-card-header">
+                                    <div class="skill-icon">📊</div>
+                                    <div class="skill-card-title">
+                                        Data &amp; Analytics
+                                    </div>
+                                </div>
+                                <div class="skill-items">
+                                    <span class="skill-badge">Python</span>
+                                    <span class="skill-badge">SQL</span>
+                                    <span class="skill-badge">A/B testing</span>
+                                    <span class="skill-badge"
+                                        >Cohort analysis</span
+                                    >
+                                    <span class="skill-badge">Mixpanel</span>
+                                    <span class="skill-badge">Hotjar</span>
+                                    <span class="skill-badge"
+                                        >Real-time dashboards</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-card-header">
+                                    <div class="skill-icon">⚙️</div>
+                                    <div class="skill-card-title">
+                                        Technical
+                                    </div>
+                                </div>
+                                <div class="skill-items">
+                                    <span class="skill-badge">REST APIs</span>
+                                    <span class="skill-badge">OpenAPI</span>
+                                    <span class="skill-badge"
+                                        >Data pipelines</span
+                                    >
+                                    <span class="skill-badge"
+                                        >System architecture</span
+                                    >
+                                    <span class="skill-badge">CI/CD</span>
+                                    <span class="skill-badge"
+                                        >Agile / Scrum</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-card-header">
+                                    <div class="skill-icon">🏗</div>
+                                    <div class="skill-card-title">
+                                        Leadership
+                                    </div>
+                                </div>
+                                <div class="skill-items">
+                                    <span class="skill-badge"
+                                        >Cross-functional teams</span
+                                    >
+                                    <span class="skill-badge"
+                                        >P&amp;L ownership</span
+                                    >
+                                    <span class="skill-badge"
+                                        >Stakeholder mgmt</span
+                                    >
+                                    <span class="skill-badge">Hiring</span>
+                                    <span class="skill-badge"
+                                        >Team up to 16</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-card-header">
+                                    <div class="skill-icon">🛡</div>
+                                    <div class="skill-card-title">
+                                        Compliance
+                                    </div>
+                                </div>
+                                <div class="skill-items">
+                                    <span class="skill-badge">SOC2</span>
+                                    <span class="skill-badge">ISO 27001</span>
+                                    <span class="skill-badge">PASSI audit</span>
+                                    <span class="skill-badge"
+                                        >Audit trails</span
+                                    >
+                                    <span class="skill-badge">Governance</span>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-card-header">
+                                    <div class="skill-icon">🛠</div>
+                                    <div class="skill-card-title">Tools</div>
+                                </div>
+                                <div class="skill-items">
+                                    <span class="skill-badge">Jira</span>
+                                    <span class="skill-badge">Notion</span>
+                                    <span class="skill-badge">Figma</span>
+                                    <span class="skill-badge">Trello</span>
+                                    <span class="skill-badge">Linear</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Languages -->
+                        <div
+                            class="section-sub"
+                            style="margin-top: 20px; margin-bottom: 10px"
+                        >
+                            Languages
+                        </div>
+                        <div class="lang-grid">
+                            <div class="lang-card">
+                                <div class="lang-name">🇫🇷 French</div>
+                                <div class="lang-level">Native</div>
+                            </div>
+                            <div class="lang-card">
+                                <div class="lang-name">🇬🇧 English</div>
+                                <div class="lang-level">Bilingual</div>
+                            </div>
+                            <div class="lang-card">
+                                <div class="lang-name">🇪🇸 Spanish</div>
+                                <div class="lang-level">Bilingual</div>
+                            </div>
+                            <div class="lang-card">
+                                <div class="lang-name">🇩🇪 German</div>
+                                <div class="lang-level">Professional</div>
+                            </div>
+                        </div>
+
+                        <!-- Education -->
+                        <div
+                            class="section-sub"
+                            style="margin-top: 20px; margin-bottom: 10px"
+                        >
+                            Education
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                padding: 10px 12px;
+                                background: var(--color-surface-2);
+                                border: 1px solid;
+                                border-color: #888884 #ffffff #ffffff #888884;
+                                border-radius: 2px;
+                                max-width: 480px;
+                            "
+                        >
+                            <span style="font-size: 24px">🎓</span>
+                            <div>
+                                <div
+                                    style="
+                                        font-weight: bold;
+                                        font-size: 13px;
+                                        color: var(--color-text);
+                                    "
+                                >
+                                    Ingénieur — ENST Bretagne
+                                </div>
+                                <div
+                                    style="
+                                        font-size: 11px;
+                                        color: var(--color-text-muted);
+                                    "
+                                >
+                                    Telecom Bretagne · Brest, France
+                                </div>
+                                <div
+                                    style="
+                                        font-family: var(--font-mono);
+                                        font-size: 10px;
+                                        color: var(--color-text-subtle);
+                                    "
+                                >
+                                    2002–2005 · Networks &amp;
+                                    Telecommunications
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── Contact window ────────────────────────────────────── -->
+            <section class="section" id="contact">
+                <div class="window">
+                    <div class="window-titlebar">
+                        <div class="window-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <span class="window-title"
+                            >Contact — Pierre-Marie Chatton</span
+                        >
+                    </div>
+                    <div class="section-header">
+                        <span class="section-tag">ping</span>
+                        <h2 class="section-title">Get in Touch</h2>
+                    </div>
+                    <div class="window-content" style="padding-top: 12px">
+                        <div class="contact-grid">
+                            <a
+                                href="mailto:pmc@kottek.biz"
+                                class="contact-item"
+                            >
+                                <span class="contact-icon">✉️</span>
+                                <div>
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-value">
+                                        pmc@kottek.biz
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/pierremariechatton/"
+                                target="_blank"
+                                rel="noopener"
+                                class="contact-item"
+                            >
+                                <span class="contact-icon">🔗</span>
+                                <div>
+                                    <div class="contact-label">LinkedIn</div>
+                                    <div class="contact-value">
+                                        pierremariechatton
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <div>
+                                    <div class="contact-label">Location</div>
+                                    <div class="contact-value">
+                                        Plouézec, Bretagne
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="tel:+33781759230" class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <div>
+                                    <div class="contact-label">Phone</div>
+                                    <div class="contact-value">
+                                        +33 7 81 75 92 30
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="window-content">
-          <div class="hero-tagline" id="hero-tagline">// product manager · builder · data nerd</div>
-          <h1 class="hero-name" id="hero-name">Pierre-Marie<br>Chatton</h1>
-          <div class="hero-role" id="hero-role">Managing Director · Product Manager · Founder</div>
-          <p class="hero-summary" id="hero-summary">
-            15+ years building and shipping B2B/SaaS products —
-            from establishing a fintech subsidiary (16 people, €2M turnover)
-            to payment features that reached <span class="metric">40%</span> of service revenue in 6 months.
-            Hands-on technical PM (Python, SQL, APIs) with deep experience in
-            data-intensive products and compliance-sensitive environments.
-          </p>
-          <div class="hero-actions">
-            <a href="#experience" class="btn btn-primary">View Experience</a>
-            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-          </div>
-          <div class="stats-row" id="stats-row">
-            <div class="stat">
-              <span class="stat-value">15+</span>
-              <span class="stat-label">Years exp.</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">7</span>
-              <span class="stat-label">Companies</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">4</span>
-              <span class="stat-label">Languages</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">€2M</span>
-              <span class="stat-label">Max P&amp;L</span>
-            </div>
-          </div>
-        </div>
-      </div>
+        <!-- /content-wrap -->
 
-      <!-- Terminal window -->
-      <div class="window">
-        <div class="window-titlebar">
-          <div class="window-buttons">
-            <span class="btn-close"></span>
-            <span class="btn-minimize"></span>
-            <span class="btn-maximize"></span>
-          </div>
-          <span class="window-title">Terminal — bash 80×24</span>
-        </div>
-        <div class="terminal" id="terminal-scroll" style="max-height:380px;overflow-y:auto">
-          <div id="terminal-output"></div>
-          <div class="terminal-line" id="terminal-input">
-            <span class="prompt">pmc@pmchatton:~$</span>&nbsp;<span class="cursor-blink">▋</span>
-          </div>
-        </div>
-      </div>
+        <footer>
+            <span style="font-weight: bold">pmchatton.com</span>
+            &nbsp;·&nbsp; &copy; 2026 Pierre-Marie Chatton &nbsp;·&nbsp; Built
+            with HTML/CSS/JS &nbsp;·&nbsp;
+            <a
+                href="https://www.linkedin.com/in/pierremariechatton/"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+            >
+        </footer>
 
-    </div>
-  </section>
-
-  <!-- ── Experience window ─────────────────────────────────── -->
-  <section class="section" id="experience">
-    <div class="window">
-      <div class="window-titlebar">
-        <div class="window-buttons">
-          <span class="btn-close"></span>
-          <span class="btn-minimize"></span>
-          <span class="btn-maximize"></span>
-        </div>
-        <span class="window-title">Tracker — Experience</span>
-      </div>
-      <div class="section-header">
-        <span class="section-tag">ls -la</span>
-        <h2 class="section-title">Experience</h2>
-      </div>
-      <div class="exp-list">
-        <div class="exp-list-header">
-          <span>Period</span>
-          <span>Role · Company</span>
-          <span>Location</span>
-          <span>Type</span>
-        </div>
-
-        <a href="experience/nuant.html" class="exp-row">
-          <span class="exp-date">2021 → 2025</span>
-          <span class="exp-name-wrap">
-            <span class="exp-title">PM / Managing Director</span>
-            <span class="exp-company">Nuant — SaaS for digital asset managers</span>
-          </span>
-          <span class="exp-location">Paris / Zug</span>
-          <span class="exp-type-wrap"><span class="exp-type type-pm">PM</span><span class="exp-type type-director">Director</span></span>
-        </a>
-
-        <a href="experience/kottek.html" class="exp-row">
-          <span class="exp-date">2018 → now</span>
-          <span class="exp-name-wrap">
-            <span class="exp-title">Founder &amp; Managing Director</span>
-            <span class="exp-company">Kottek — Product &amp; PM consultancy</span>
-          </span>
-          <span class="exp-location">Paris</span>
-          <span class="exp-type-wrap"><span class="exp-type type-founder">Founder</span><span class="exp-type type-director">Director</span></span>
-        </a>
-
-        <a href="experience/partakus.html" class="exp-row">
-          <span class="exp-date">2017 → 2021</span>
-          <span class="exp-name-wrap">
-            <span class="exp-title">Head of Projects</span>
-            <span class="exp-company">Partakus — Automotive marketplace</span>
-          </span>
-          <span class="exp-location">Paris</span>
-          <span class="exp-type-wrap"><span class="exp-type type-director">Director</span></span>
-        </a>
-
-        <a href="experience/palo-it.html" class="exp-row">
-          <span class="exp-date">2015 → 2018</span>
-          <span class="exp-name-wrap">
-            <span class="exp-title">Business Unit Manager &amp; Pre-Sales Lead</span>
-            <span class="exp-company">Palo IT — Tech consultancy</span>
-          </span>
-          <span class="exp-location">Paris</span>
-          <span class="exp-type-wrap"><span class="exp-type type-director">Director</span></span>
-        </a>
-
-        <a href="experience/libon.html" class="exp-row">
-          <span class="exp-date">2014 → 2017</span>
-          <span class="exp-name-wrap">
-            <span class="exp-title">Product Owner</span>
-            <span class="exp-company">Libon — Orange Group</span>
-          </span>
-          <span class="exp-location">Châtillon, France</span>
-          <span class="exp-type-wrap"><span class="exp-type type-pm">PM</span></span>
-        </a>
-
-        <a href="experience/orange-spain.html" class="exp-row">
-          <span class="exp-date">2008 → 2014</span>
-          <span class="exp-name-wrap">
-            <span class="exp-title">Test &amp; Validation Manager</span>
-            <span class="exp-company">Orange Spain</span>
-          </span>
-          <span class="exp-location">Barcelona</span>
-          <span class="exp-type-wrap"><span class="exp-type type-director">Director</span></span>
-        </a>
-
-        <a href="experience/niji.html" class="exp-row">
-          <span class="exp-date">2006 → 2010</span>
-          <span class="exp-name-wrap">
-            <span class="exp-title">Solution Engineer</span>
-            <span class="exp-company">Niji — Tech consultancy</span>
-          </span>
-          <span class="exp-location">Rennes, France</span>
-          <span class="exp-type-wrap"><span class="exp-type type-engineer">Engineer</span></span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Skills window ─────────────────────────────────────── -->
-  <section class="section" id="skills">
-    <div class="window">
-      <div class="window-titlebar">
-        <div class="window-buttons">
-          <span class="btn-close"></span>
-          <span class="btn-minimize"></span>
-          <span class="btn-maximize"></span>
-        </div>
-        <span class="window-title">skills.json — Profile</span>
-      </div>
-
-      <div class="section-header">
-        <span class="section-tag">cat</span>
-        <h2 class="section-title">Skills &amp; Profile</h2>
-      </div>
-
-      <div class="window-content" style="padding-top:12px">
-
-        <!-- Skills grid -->
-        <div class="section-sub" style="margin-bottom:10px">Core Skills</div>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <div class="skill-icon">🗺</div>
-              <div class="skill-card-title">Product Strategy</div>
-            </div>
-            <div class="skill-items">
-              <span class="skill-badge">Roadmap ownership</span>
-              <span class="skill-badge">0→1 builds</span>
-              <span class="skill-badge">Prioritization</span>
-              <span class="skill-badge">Competitive analysis</span>
-              <span class="skill-badge">User research</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <div class="skill-icon">📊</div>
-              <div class="skill-card-title">Data &amp; Analytics</div>
-            </div>
-            <div class="skill-items">
-              <span class="skill-badge">Python</span>
-              <span class="skill-badge">SQL</span>
-              <span class="skill-badge">A/B testing</span>
-              <span class="skill-badge">Cohort analysis</span>
-              <span class="skill-badge">Mixpanel</span>
-              <span class="skill-badge">Hotjar</span>
-              <span class="skill-badge">Real-time dashboards</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <div class="skill-icon">⚙️</div>
-              <div class="skill-card-title">Technical</div>
-            </div>
-            <div class="skill-items">
-              <span class="skill-badge">REST APIs</span>
-              <span class="skill-badge">OpenAPI</span>
-              <span class="skill-badge">Data pipelines</span>
-              <span class="skill-badge">System architecture</span>
-              <span class="skill-badge">CI/CD</span>
-              <span class="skill-badge">Agile / Scrum</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <div class="skill-icon">🏗</div>
-              <div class="skill-card-title">Leadership</div>
-            </div>
-            <div class="skill-items">
-              <span class="skill-badge">Cross-functional teams</span>
-              <span class="skill-badge">P&amp;L ownership</span>
-              <span class="skill-badge">Stakeholder mgmt</span>
-              <span class="skill-badge">Hiring</span>
-              <span class="skill-badge">Team up to 16</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <div class="skill-icon">🛡</div>
-              <div class="skill-card-title">Compliance</div>
-            </div>
-            <div class="skill-items">
-              <span class="skill-badge">SOC2</span>
-              <span class="skill-badge">ISO 27001</span>
-              <span class="skill-badge">PASSI audit</span>
-              <span class="skill-badge">Audit trails</span>
-              <span class="skill-badge">Governance</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <div class="skill-icon">🛠</div>
-              <div class="skill-card-title">Tools</div>
-            </div>
-            <div class="skill-items">
-              <span class="skill-badge">Jira</span>
-              <span class="skill-badge">Notion</span>
-              <span class="skill-badge">Figma</span>
-              <span class="skill-badge">Trello</span>
-              <span class="skill-badge">Linear</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Languages -->
-        <div class="section-sub" style="margin-top:20px;margin-bottom:10px">Languages</div>
-        <div class="lang-grid">
-          <div class="lang-card"><div class="lang-name">🇫🇷 French</div><div class="lang-level">Native</div></div>
-          <div class="lang-card"><div class="lang-name">🇬🇧 English</div><div class="lang-level">Bilingual</div></div>
-          <div class="lang-card"><div class="lang-name">🇪🇸 Spanish</div><div class="lang-level">Bilingual</div></div>
-          <div class="lang-card"><div class="lang-name">🇩🇪 German</div><div class="lang-level">Professional</div></div>
-        </div>
-
-        <!-- Education -->
-        <div class="section-sub" style="margin-top:20px;margin-bottom:10px">Education</div>
-        <div style="display:flex;gap:10px;align-items:center;padding:10px 12px;background:var(--color-surface-2);border:1px solid;border-color:#888884 #FFFFFF #FFFFFF #888884;border-radius:2px;max-width:480px">
-          <span style="font-size:24px">🎓</span>
-          <div>
-            <div style="font-weight:bold;font-size:13px;color:var(--color-text)">Ingénieur — ENST Bretagne</div>
-            <div style="font-size:11px;color:var(--color-text-muted)">Telecom Bretagne · Brest, France</div>
-            <div style="font-family:var(--font-mono);font-size:10px;color:var(--color-text-subtle)">2002–2005 · Networks &amp; Telecommunications</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Contact window ────────────────────────────────────── -->
-  <section class="section" id="contact">
-    <div class="window">
-      <div class="window-titlebar">
-        <div class="window-buttons">
-          <span class="btn-close"></span>
-          <span class="btn-minimize"></span>
-          <span class="btn-maximize"></span>
-        </div>
-        <span class="window-title">Contact — Pierre-Marie Chatton</span>
-      </div>
-      <div class="section-header">
-        <span class="section-tag">ping</span>
-        <h2 class="section-title">Get in Touch</h2>
-      </div>
-      <div class="window-content" style="padding-top:12px">
-        <div class="contact-grid">
-          <a href="mailto:pmc@kottek.biz" class="contact-item">
-            <span class="contact-icon">✉️</span>
-            <div>
-              <div class="contact-label">Email</div>
-              <div class="contact-value">pmc@kottek.biz</div>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/pierremariechatton/" target="_blank" rel="noopener" class="contact-item">
-            <span class="contact-icon">🔗</span>
-            <div>
-              <div class="contact-label">LinkedIn</div>
-              <div class="contact-value">pierremariechatton</div>
-            </div>
-          </a>
-          <div class="contact-item">
-            <span class="contact-icon">📍</span>
-            <div>
-              <div class="contact-label">Location</div>
-              <div class="contact-value">Plouézec, Bretagne</div>
-            </div>
-          </div>
-          <a href="tel:+33781759230" class="contact-item">
-            <span class="contact-icon">📞</span>
-            <div>
-              <div class="contact-label">Phone</div>
-              <div class="contact-value">+33 7 81 75 92 30</div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</div><!-- /content-wrap -->
-
-<footer>
-  <span style="font-weight:bold">pmchatton.com</span>
-  &nbsp;·&nbsp;
-  &copy; 2026 Pierre-Marie Chatton
-  &nbsp;·&nbsp;
-  Built with HTML/CSS/JS
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/pierremariechatton/" target="_blank" rel="noopener">LinkedIn</a>
-</footer>
-
-<script src="js/content.js"></script>
-<script src="js/main.js"></script>
-</body>
+        <script src="js/content.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

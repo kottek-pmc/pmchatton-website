@@ -30,12 +30,12 @@ nav_next_label: Kottek — Fundador
 
 ## Context
 
-Nuant es una plataforma B2B SaaS al servicio de gestores institucionales de activos digitales — hedge funds, family offices y trading desks. Me incorporé para crear la filial francesa desde cero y liderar la estrategia de producto en tres productos data clave.
+Nuant es una plataforma B2B SaaS al servicio de gestores de activos digitales y usuarios DeFi. Me incorporé inicialmente para gestionar la infraestructura como Product Manager, antes de evolucionar rápidamente hacia el product management de Data Stream y el Simulador, y crear la filial francesa desde cero. Rol todoterreno: Product Manager, Head of Operations y Director General.
 
 ## Achievements
 
-- Creación de Nuant France desde cero — escalada a **16 empleados** y **2 M€ de facturación** con responsabilidad P&L completa
-- Dirección de la estrategia de producto para **3 productos data** (simulador, flujos en tiempo real, dashboards de monitorización) con un equipo de **10 ingenieros**
+- Creación de Nuant France desde cero — escalada a **16 empleados** y **2 M€ de facturación**
+- Dirección del product management para **3 productos data** (simulador, flujos en tiempo real, dashboards de monitorización) con un equipo de **10 ingenieros**
 - Construcción del producto data stream de 0 a negocio autónomo — convertido en línea de ingresos independiente
 - Simulador llevado de **0 a 150+ usuarios** mediante desarrollo iterativo y ciclos de feedback directo con clientes
 - Desarrollo de dashboards analíticos (Python, SQL) utilizados a diario por equipos de análisis cuantitativo en clientes institucionales

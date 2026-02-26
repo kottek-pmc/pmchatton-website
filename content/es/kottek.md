@@ -10,7 +10,7 @@ context_label: Contexto
 achievements_label: Logros
 
 pill_1: orange | 📅 Octubre 2018 – Presente
-pill_2: blue | 📍 París, Francia
+pill_2: blue | 📍 Plouézec, Francia
 pill_3: purple | 🏢 Consultoría
 pill_4: green | 👥 5 empleados · 500 K€ de facturación
 
@@ -28,7 +28,7 @@ nav_next_label: Partakus — Director de Proyectos
 
 ## Context
 
-Kottek es una consultoría boutique que fundé para aportar experiencia senior en Product y Project Management a empresas tecnológicas en crecimiento. Activa en paralelo con mi rol en Nuant, refleja mi convicción de construir trabajo independiente sostenible junto a posiciones de liderazgo embedded.
+Kottek es una consultoría digital que fundé para aportar experiencia senior en Product y Project Management a empresas tecnológicas en crecimiento. Activa en paralelo con mi rol en Nuant, refleja mi convicción de construir trabajo independiente sostenible junto a posiciones de liderazgo embedded.
 
 ## Achievements
 

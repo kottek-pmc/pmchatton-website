@@ -4,12 +4,11 @@ name: Pierre-Marie
 name2: Chatton
 role: Directeur Général · Product Manager · Fondateur
 
-stat_1: 15+ | Ans d'exp.
+stat_1: 20 | Ans d'exp.
 stat_2: 7 | Entreprises
 stat_3: 4 | Langues
-stat_4: €2M | P&L max
 ---
 
 ## Summary
 
-Plus de 15 ans en conception et lancement de produits B2B/SaaS — de la création d'une filiale fintech (16 pers., **2 M€ de CA**) au lancement de fonctionnalités de paiement atteignant **40 %** du revenu du service en 6 mois. PM technique (Python, SQL, APIs) avec expertise en produits data et environnements conformité (SOC2, ISO 27001).
+20 ans à concevoir et livrer des produits B2B/SaaS — de l'expertise technique à l'entrepreneuriat, avec un parcours en management de projets internationaux, avant-vente et product management. PM technique (Python, SQL, APIs) avec une expertise en produits data et environnements sensibles à la conformité.

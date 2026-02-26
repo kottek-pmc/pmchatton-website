@@ -27,11 +27,11 @@ nav_next_label: Niji — Ingeniero de Soluciones
 
 ## Context
 
-Orange Spain es uno de los principales operadores de telecomunicaciones de España. Gestioné equipos técnicos internacionales responsables de las pruebas y validación de la infraestructura de red móvil, con especial foco en las capacidades de red de nueva generación presentadas en el GSMA Mobile World Congress.
+Orange Spain es uno de los principales operadores de telecomunicaciones de España. Gestioné una plataforma de pruebas y validación de infraestructura de red móvil, con especial foco en las capacidades de red de nueva generación presentadas en el GSMA Mobile World Congress.
 
 ## Achievements
 
-- Gestión de equipos técnicos internacionales para las pruebas y validación de infraestructura de red móvil en múltiples generaciones tecnológicas (2G/3G/4G)
+- Gestión de la infraestructura de red móvil para pruebas y validación en múltiples generaciones tecnológicas (2G/3G/4G)
 - Seleccionado como demostrador en el **GSMA Mobile World Congress** durante **4 años consecutivos** (2011–2014) — representando las capacidades técnicas de Orange ante la industria telco global
 - Coordinación de campañas de pruebas transfronterizas con equipos de proveedores (Ericsson, Nokia, Huawei) y grupos de ingeniería internos
 - Producción de documentación de validación técnica e informes de conformidad regulatoria y operativa

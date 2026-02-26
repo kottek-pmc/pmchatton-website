@@ -22,7 +22,7 @@ metric_3: 9+ | Miembros de equipo | orange
 metric_4: 3 | Plataformas (web/iOS/Android) | purple
 
 nav_prev_url: palo-it.html
-nav_prev_label: Palo IT — Responsable BU
+nav_prev_label: Palo IT — Hive Master
 nav_next_url: orange-spain.html
 nav_next_label: Orange Spain — Responsable de Tests
 ---

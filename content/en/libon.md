@@ -20,14 +20,14 @@ metric_3: 9+ | Team members | orange
 metric_4: 3 | Platforms (web/iOS/Android) | purple
 
 nav_prev_url: palo-it.html
-nav_prev_label: Palo IT — BU Manager
+nav_prev_label: Palo IT — Hive Master
 nav_next_url: orange-spain.html
 nav_next_label: Orange Spain — Test Manager
 ---
 
 ## Context
 
-Libon was a consumer mobile communication app under Orange Group with millions of users across Europe and Southeast Asia. I owned the payment and e-commerce product vertical — a high-stakes, high-visibility role within a large corporate structure.
+Libon is a consumer mobile communication app under Orange Group with millions of users across Europe and Southeast Asia. I owned the payment and e-commerce product vertical — a high-stakes, high-visibility role within a large corporate structure.
 
 ## Achievements
 

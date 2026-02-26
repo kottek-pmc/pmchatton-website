@@ -22,7 +22,7 @@ metric_2: 3 | Chefs de projet managés | green
 nav_prev_url: kottek.html
 nav_prev_label: Kottek — Fondateur
 nav_next_url: palo-it.html
-nav_next_label: Palo IT — Responsable BU
+nav_next_label: Palo IT — Hive Master
 ---
 
 ## Context
@@ -32,7 +32,7 @@ Partakus est une marketplace B2B digitale dans le secteur automobile, mettant en
 ## Achievements
 
 - Déploiement des services marketplace dans **3 pays** — France, Espagne et Maroc — en manageant une équipe de **3 chefs de projet**
-- Interface Product/Engineering : pilotage du discovery, du prototypage, des tests utilisateurs et de la définition des exigences de bout en bout
+- Interface Product/Engineering : discovery, prototypage, tests utilisateurs et définition des exigences de bout en bout
 - Delivery orienté KPI — optimisation des délais et des coûts de déploiement par marché grâce à la standardisation des processus
 - Mise en place d'une gouvernance produit multi-marchés pour garantir la cohérence tout en s'adaptant aux contextes réglementaires et métiers locaux
 - Gestion des parties prenantes à tous niveaux — direction, équipes opérationnelles et partenaires externes, en plusieurs langues

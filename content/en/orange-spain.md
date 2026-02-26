@@ -25,11 +25,11 @@ nav_next_label: Niji — Solution Engineer
 
 ## Context
 
-Orange Spain is one of Spain's major telecom operators. I managed international technical teams responsible for testing and validating mobile network infrastructure, with a particular focus on next-generation network capabilities showcased at GSMA Mobile World Congress.
+Orange Spain is one of Spain's major telecom operators. I managed a platform for testing and validating mobile network infrastructure, with a particular focus on next-generation network capabilities showcased at GSMA Mobile World Congress.
 
 ## Achievements
 
-- Managed international technical teams for mobile network infrastructure testing and validation across multiple technology generations (2G/3G/4G)
+- Managed mobile network infrastructure for testing and validating across multiple technology generations (2G/3G/4G)
 - Selected as demonstrator at **GSMA Mobile World Congress** for **4 consecutive years** (2011–2014) — representing Orange's technical capabilities to the global telecom industry
 - Coordinated cross-border test campaigns with vendor teams (Ericsson, Nokia, Huawei) and internal engineering groups
 - Delivered technical validation documentation and reports for regulatory and operational compliance

@@ -10,7 +10,7 @@ context_label: Contexte
 achievements_label: Réalisations
 
 pill_1: orange | 📅 Octobre 2018 – Présent
-pill_2: blue | 📍 Paris, France
+pill_2: blue | 📍 Plouézec, France
 pill_3: purple | 🏢 Conseil
 pill_4: green | 👥 5 collaborateurs · 500 K€ de CA
 
@@ -28,7 +28,7 @@ nav_next_label: Partakus — Directeur de Projets
 
 ## Context
 
-Kottek est un cabinet de conseil boutique que j'ai fondé pour apporter une expertise senior en Product et Project Management à des entreprises tech en croissance. Actif en parallèle de mon rôle chez Nuant, il traduit ma conviction de construire une activité indépendante durable tout en occupant des postes de leadership embarqués.
+Kottek est un cabinet de conseil digital que j'ai fondé pour apporter une expertise senior en Product et Project Management à des entreprises tech en croissance. Actif en parallèle de mon rôle chez Nuant, il traduit ma conviction de construire une activité indépendante durable tout en occupant des postes de leadership embarqués.
 
 ## Achievements
 

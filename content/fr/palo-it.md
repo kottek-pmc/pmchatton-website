@@ -1,9 +1,9 @@
 ---
 emoji: 💼
-title: Responsable Business Unit & Avant-Vente
+title: Hive Master, Avant-Vente et Consultant
 company: Palo IT — ESN (50 pers., 12 M€ de CA)
 company_short: Palo IT · 2015–2018
-window_title: palo-it.md — Responsable BU & Avant-Vente
+window_title: palo-it.md — Hive Master, Avant-Vente et Consultant
 stack_label: Stack & Méthodes
 metrics_label: Chiffres Clés
 context_label: Contexte
@@ -16,7 +16,7 @@ pill_2: blue | 📍 Paris, France
 pill_3: purple | 🏢 ESN · Conseil Tech
 pill_4: orange | 👥 10 consultants managés
 
-stack: Ingénierie avant-vente, Vente enterprise, Coaching Agile, Gestion P&L, Management d'équipe, Delivery conseil
+stack: Ingénierie avant-vente, Coaching Agile, Gestion P&L, Management d'équipe, Delivery conseil
 
 metric_1: 10 | Consultants managés | blue
 metric_2: €12M | CA entreprise | orange
@@ -30,12 +30,11 @@ nav_next_label: Libon — Product Owner
 
 ## Context
 
-Palo IT est une ESN internationale (700+ personnes aujourd'hui en Asie, Europe, Moyen-Orient). Sur le bureau parisien, j'occupais deux rôles : la direction d'une business unit de 10 consultants et la conduite de l'avant-vente pour signer et développer des comptes grands comptes.
+Palo IT est une ESN internationale (700+ personnes aujourd'hui en Asie, Europe, Australie et Amérique du Sud). Sur le bureau parisien, j'occupais deux rôles : animer une ruche de 10 consultants tout en intervenant en tant que consultant pour plusieurs clients (Orange, Boursorama, Arkadin, Renault, etc.).
 
 ## Achievements
 
 - Ingénieur avant-vente : sourcing, présentation et closing de missions auprès de **Renault**, **L'Oréal**, **Boursorama** et **Group Up**
-- Management d'une business unit de **10 consultants** dans les disciplines produit, engineering et design
+- Animation d'une ruche de **10 consultants** dans les disciplines produit, engineering et design
 - Contribution à la stratégie d'entreprise au niveau de l'entité parisienne
-- Construction et animation d'un pipeline commercial grand compte en contexte concurrentiel
 - Rédaction de propositions techniques complexes pour des missions de transformation digitale

@@ -6,7 +6,7 @@ company_short: Niji · 2006–2010
 window_title: niji.md — Solution Engineer
 stack_label: Technologies
 clients_label: Key Clients
-clients: Crédit Mutuel, Orange Business Services
+clients: Crédit Mutuel, Orange Business Services, Orange Labs
 
 pill_1: purple | 📅 February 2006 – January 2010
 pill_2: blue | 📍 Rennes, France
@@ -23,7 +23,7 @@ nav_next_label: All Experience
 
 ## Context
 
-Niji (formerly Sqli Group Bretagne) is a major French digital services and consulting firm. This was my first professional role after graduating from Telecom Bretagne, where I applied my engineering background to real-world telecom platform consulting.
+Niji is a major French digital services and consulting firm. This was my first professional role after graduating from Telecom Bretagne, where I applied my engineering background to real-world telecom platform consulting.
 
 ## Achievements
 

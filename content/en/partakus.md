@@ -20,7 +20,7 @@ metric_2: 3 | PMs managed | green
 nav_prev_url: kottek.html
 nav_prev_label: Kottek — Founder
 nav_next_url: palo-it.html
-nav_next_label: Palo IT — BU Manager
+nav_next_label: Palo IT — Hive Master
 ---
 
 ## Context
@@ -30,7 +30,7 @@ Partakus is a B2B digital marketplace in the automotive sector, connecting spare
 ## Achievements
 
 - Deployed digital marketplace services across **3 countries** — France, Spain, and Morocco — managing a team of **3 Product Managers**
-- Bridged Product and Engineering: led end-to-end discovery, prototyping, user testing, and requirements definition
+- Bridged Product and Engineering: end-to-end discovery, prototyping, user testing, and requirements definition
 - KPI-driven service delivery — optimized deployment time and cost per market through process standardization
 - Established cross-market product governance to ensure consistency while adapting to local regulatory and business contexts
 - Managed stakeholder relationships across C-suite, operational teams, and external partners in multiple languages

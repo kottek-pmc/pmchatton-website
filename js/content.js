@@ -100,7 +100,13 @@
         localStorage.setItem('pmc_lang', l);
         var url = new URL(location.href);
         url.searchParams.delete('lang');
-        location.href = url.toString();
+        var target = url.toString();
+        // location.href won't reload if URL is identical; use reload() as fallback
+        if (target === location.href) {
+          location.reload();
+        } else {
+          location.href = target;
+        }
       };
       container.appendChild(btn);
     });
