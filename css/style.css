@@ -1116,6 +1116,55 @@ footer a {
 }
 
 /* ============================================
+   PORTFOLIO
+   ============================================ */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 12px;
+}
+.portfolio-card {
+    background: var(--color-bg-subtle);
+    border: 1px solid;
+    border-color: #ffffff #888884 #888884 #ffffff;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    border-radius: var(--window-radius);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.portfolio-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.portfolio-emoji {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+.portfolio-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+.portfolio-tagline {
+    font-size: 11px;
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+.portfolio-desc {
+    font-size: 12px;
+    color: var(--color-text-muted);
+    line-height: 1.65;
+}
+.portfolio-period {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--color-text-subtle);
+}
+
+/* ============================================
    LANGUAGE SWITCHER — BeOS segmented control
    ============================================ */
 .lang-switcher {

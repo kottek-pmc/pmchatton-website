@@ -213,6 +213,32 @@
     });
   }
 
+  // ── Portfolio page loader ─────────────────────────────────
+  function loadPortfolioPage() {
+    fetch('content/portfolio.json')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (!data) return;
+        var grid = el('portfolio-grid');
+        if (!grid) return;
+        grid.innerHTML = data.projects.map(function (p) {
+          var link = p.url
+            ? '<a href="' + p.url + '" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top:4px">' +
+              'Visit site →</a>'
+            : '';
+          return '<div class="portfolio-card">' +
+            '<div class="portfolio-card-header">' +
+            '<span class="portfolio-emoji">' + (p.emoji || '') + '</span>' +
+            '<div>' +
+            '<div class="portfolio-name">' + p.name + '</div>' +
+            '<div class="portfolio-tagline">' + p.tagline + '</div>' +
+            '</div></div>' +
+            link +
+            '</div>';
+        }).join('');
+      });
+  }
+
   // ── Skills loader (from content/skills.json) ─────────────
   function loadSkills() {
     var base = isExpPage ? '..' : '.';
@@ -307,11 +333,14 @@
 
   // ── Init ──────────────────────────────────────────────────
   var isExpPage = typeof window.EXP_SLUG !== 'undefined';
+  var isPortfolioPage = typeof window.PAGE_TYPE !== 'undefined' && window.PAGE_TYPE === 'portfolio';
   var lang = detectLang();
 
   document.addEventListener('DOMContentLoaded', function () {
     injectLangSwitcher();
-    if (isExpPage) {
+    if (isPortfolioPage) {
+      loadPortfolioPage();
+    } else if (isExpPage) {
       loadExpPage();
     } else {
       loadHomePage();

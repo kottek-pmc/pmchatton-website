@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio — Pierre-Marie Chatton</title>
+        <meta name="description" content="Portfolio of projects and ventures by Pierre-Marie Chatton." />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- ── Screen Bar ───────────────────────────────────────── -->
+        <nav class="menubar">
+            <div class="menubar-left">
+                <a href="index.html" class="menu-item">pmchatton</a>
+                <a href="index.html#about" class="menu-item">About</a>
+                <a href="index.html#experience" class="menu-item">Experience</a>
+                <a href="index.html#skills" class="menu-item">Skills</a>
+                <a href="index.html#contact" class="menu-item">Contact</a>
+            </div>
+            <div class="menubar-right">
+                <div class="lang-switcher" id="lang-switcher"></div>
+                <span class="menu-clock" id="clock"></span>
+            </div>
+        </nav>
+
+        <div class="content-wrap">
+            <section class="section">
+                <div class="window">
+                    <div class="window-titlebar">
+                        <div class="window-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <span class="window-title">portfolio.json — Projects</span>
+                    </div>
+                    <div class="section-header">
+                        <span class="section-tag">ls</span>
+                        <h1 class="section-title">Portfolio</h1>
+                    </div>
+                    <div class="window-content" style="padding-top: 12px">
+                        <div class="portfolio-grid" id="portfolio-grid"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <span style="font-weight: bold">pmchatton.com</span>
+            &nbsp;·&nbsp; &copy; 2026 Pierre-Marie Chatton &nbsp;·&nbsp; Built
+            with HTML/CSS/JS &nbsp;·&nbsp;
+            <a href="https://www.linkedin.com/in/pierremariechatton/" target="_blank" rel="noopener">LinkedIn</a>
+        </footer>
+
+        <script>window.PAGE_TYPE = 'portfolio';</script>
+        <script src="js/content.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -211,16 +211,23 @@ function initScrollNav() {
   const sections  = document.querySelectorAll('.section[id]');
   const navLinks  = document.querySelectorAll('.menubar .menu-item[href^="#"]');
   if (!sections.length) return;
+
+  function setActive(id) {
+    navLinks.forEach(l => l.classList.remove('active'));
+    document.querySelector(`.menubar .menu-item[href="#${id}"]`)?.classList.add('active');
+  }
+
   const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        navLinks.forEach(l => l.classList.remove('active'));
-        document.querySelector(`.menubar .menu-item[href="#${e.target.id}"]`)
-          ?.classList.add('active');
-      }
-    });
+    entries.forEach(e => { if (e.isIntersecting) setActive(e.target.id); });
   }, { rootMargin: '-40% 0px -55% 0px' });
   sections.forEach(s => obs.observe(s));
+
+  // Activate last section when scrolled to the bottom
+  window.addEventListener('scroll', () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {
+      setActive(sections[sections.length - 1].id);
+    }
+  }, { passive: true });
 }
 
 // ============================================================
