@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minesweeper — pmchatton.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .msw-wrap {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .msw-wrap .window {
+      width: fit-content;
+      min-width: 0;
+    }
+    .msw-diff {
+      display: flex;
+      gap: 4px;
+      padding: 5px 8px;
+      background: var(--color-surface-2);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .msw-diff button {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--color-text);
+      background: var(--color-surface-2);
+      border: 1px solid;
+      border-color: #ffffff #888884 #888884 #ffffff;
+      padding: 1px 10px;
+      cursor: pointer;
+    }
+    .msw-diff button:active,
+    .msw-diff button.active {
+      border-color: #888884 #ffffff #ffffff #888884;
+      background: var(--color-bg);
+    }
+    .msw-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 6px 10px;
+      background: var(--color-surface-2);
+      border-bottom: 2px solid;
+      border-color: #888884 #ffffff #ffffff #888884;
+      margin: 6px 8px;
+      border-radius: 1px;
+    }
+    .msw-lcd {
+      font-family: var(--font-mono);
+      font-size: 20px;
+      font-weight: bold;
+      color: #f00;
+      background: #000;
+      padding: 2px 6px;
+      min-width: 52px;
+      text-align: right;
+      letter-spacing: 3px;
+      border: 1px solid;
+      border-color: #888884 #ffffff #ffffff #888884;
+    }
+    .msw-face {
+      font-size: 18px;
+      cursor: pointer;
+      background: var(--color-surface-2);
+      border: 2px solid;
+      border-color: #ffffff #888884 #888884 #ffffff;
+      padding: 2px 6px;
+      line-height: 1;
+    }
+    .msw-face:active { border-color: #888884 #ffffff #ffffff #888884; }
+    .msw-grid {
+      display: grid;
+      margin: 0 8px 8px;
+      border: 2px solid;
+      border-color: #888884 #ffffff #ffffff #888884;
+      user-select: none;
+      line-height: 1;
+    }
+    .msw-cell {
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      box-sizing: border-box;
+      flex-shrink: 0;
+    }
+    .msw-cell.hidden {
+      background: var(--color-surface-2);
+      border: 2px solid;
+      border-color: #ffffff #888884 #888884 #ffffff;
+    }
+    .msw-cell.hidden:hover { filter: brightness(1.15); }
+    .msw-cell.revealed {
+      background: var(--color-bg);
+      border: 1px solid #30363d;
+      font-size: 13px;
+    }
+    .msw-cell.flagged {
+      background: var(--color-surface-2);
+      border: 2px solid;
+      border-color: #ffffff #888884 #888884 #ffffff;
+      font-size: 13px;
+    }
+    .msw-cell.wrong-flag {
+      background: #cc2222;
+      font-size: 13px;
+    }
+    .msw-cell.mine-hit {
+      background: #cc2222;
+      font-size: 15px;
+    }
+    /* Number colors tuned for dark bg */
+    .msw-n1 { color: #58a6ff; }
+    .msw-n2 { color: #39d353; }
+    .msw-n3 { color: #f0883e; }
+    .msw-n4 { color: #bc8cff; }
+    .msw-n5 { color: #ff6b6b; }
+    .msw-n6 { color: #56d4dd; }
+    .msw-n7 { color: #e6edf3; }
+    .msw-n8 { color: #6e7681; }
+  </style>
+</head>
+<body>
+
+<nav class="menubar">
+  <div class="menubar-left">
+    <a href="index.html" class="menu-item">pmchatton</a>
+    <a href="index.html#about" class="menu-item">About</a>
+    <a href="index.html#experience" class="menu-item">Experience</a>
+    <a href="index.html#skills" class="menu-item">Skills</a>
+    <a href="index.html#contact" class="menu-item">Contact</a>
+  </div>
+  <div class="menubar-right">
+    <span class="menu-clock" id="clock"></span>
+  </div>
+</nav>
+
+<div class="content-wrap">
+  <section class="section">
+    <div class="msw-wrap">
+      <div class="window">
+        <div class="window-titlebar">
+          <div class="window-buttons">
+            <span class="btn-close"></span>
+            <span class="btn-minimize"></span>
+            <span class="btn-maximize"></span>
+          </div>
+          <span class="window-title">Minesweeper</span>
+        </div>
+
+        <div class="msw-diff">
+          <button id="diff-beginner" class="active" onclick="setDifficulty('beginner')">Beginner</button>
+          <button id="diff-intermediate" onclick="setDifficulty('intermediate')">Intermediate</button>
+          <button id="diff-expert" onclick="setDifficulty('expert')">Expert</button>
+        </div>
+
+        <div class="msw-toolbar">
+          <div class="msw-lcd" id="mine-count">010</div>
+          <button class="msw-face" id="face-btn" onclick="initGame()">🙂</button>
+          <div class="msw-lcd" id="timer">000</div>
+        </div>
+
+        <div class="msw-grid" id="msw-grid"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <span style="font-weight:bold">pmchatton.com</span>
+  &nbsp;·&nbsp; &copy; 2026 Pierre-Marie Chatton &nbsp;·&nbsp; Built with HTML/CSS/JS
+</footer>
+
+<script>
+const DIFFICULTIES = {
+  beginner:     { rows: 9,  cols: 9,  mines: 10 },
+  intermediate: { rows: 16, cols: 16, mines: 40 },
+  expert:       { rows: 16, cols: 30, mines: 99 },
+};
+
+let difficulty = 'beginner';
+let cfg = DIFFICULTIES[difficulty];
+let board, revealed, flagged;
+let gameOver, gameWon, firstClick;
+let timerInterval, seconds, minesLeft;
+
+function setDifficulty(d) {
+  difficulty = d;
+  cfg = DIFFICULTIES[d];
+  document.querySelectorAll('.msw-diff button').forEach(b => b.classList.remove('active'));
+  document.getElementById('diff-' + d).classList.add('active');
+  initGame();
+}
+
+function initGame() {
+  clearInterval(timerInterval);
+  seconds = 0;
+  minesLeft = cfg.mines;
+  gameOver = false;
+  gameWon = false;
+  firstClick = true;
+  board    = Array.from({ length: cfg.rows }, () => Array(cfg.cols).fill(0));
+  revealed = Array.from({ length: cfg.rows }, () => Array(cfg.cols).fill(false));
+  flagged  = Array.from({ length: cfg.rows }, () => Array(cfg.cols).fill(false));
+  setFace('🙂');
+  updateLCD('mine-count', minesLeft);
+  updateLCD('timer', 0);
+  renderGrid();
+}
+
+function placeMines(fr, fc) {
+  const safe = new Set();
+  for (let dr = -1; dr <= 1; dr++)
+    for (let dc = -1; dc <= 1; dc++) {
+      const r = fr + dr, c = fc + dc;
+      if (r >= 0 && r < cfg.rows && c >= 0 && c < cfg.cols)
+        safe.add(r * cfg.cols + c);
+    }
+  let placed = 0;
+  while (placed < cfg.mines) {
+    const r = Math.floor(Math.random() * cfg.rows);
+    const c = Math.floor(Math.random() * cfg.cols);
+    if (board[r][c] !== -1 && !safe.has(r * cfg.cols + c)) {
+      board[r][c] = -1;
+      placed++;
+    }
+  }
+  for (let r = 0; r < cfg.rows; r++)
+    for (let c = 0; c < cfg.cols; c++) {
+      if (board[r][c] === -1) continue;
+      let n = 0;
+      forNeighbors(r, c, (nr, nc) => { if (board[nr][nc] === -1) n++; });
+      board[r][c] = n;
+    }
+}
+
+function forNeighbors(r, c, fn) {
+  for (let dr = -1; dr <= 1; dr++)
+    for (let dc = -1; dc <= 1; dc++) {
+      if (dr === 0 && dc === 0) continue;
+      const nr = r + dr, nc = c + dc;
+      if (nr >= 0 && nr < cfg.rows && nc >= 0 && nc < cfg.cols) fn(nr, nc);
+    }
+}
+
+function floodReveal(r, c) {
+  if (r < 0 || r >= cfg.rows || c < 0 || c >= cfg.cols) return;
+  if (revealed[r][c] || flagged[r][c]) return;
+  revealed[r][c] = true;
+  if (board[r][c] === 0) forNeighbors(r, c, floodReveal);
+}
+
+function handleClick(r, c) {
+  if (gameOver || gameWon || revealed[r][c] || flagged[r][c]) return;
+  if (firstClick) {
+    firstClick = false;
+    placeMines(r, c);
+    timerInterval = setInterval(() => {
+      seconds = Math.min(seconds + 1, 999);
+      updateLCD('timer', seconds);
+    }, 1000);
+  }
+  if (board[r][c] === -1) {
+    revealed[r][c] = true;
+    gameOver = true;
+    clearInterval(timerInterval);
+    setFace('😵');
+    for (let i = 0; i < cfg.rows; i++)
+      for (let j = 0; j < cfg.cols; j++)
+        if (board[i][j] === -1) revealed[i][j] = true;
+    renderGrid();
+    return;
+  }
+  floodReveal(r, c);
+  checkWin();
+  renderGrid();
+}
+
+function handleRightClick(e, r, c) {
+  e.preventDefault();
+  if (gameOver || gameWon || revealed[r][c]) return;
+  flagged[r][c] = !flagged[r][c];
+  minesLeft += flagged[r][c] ? -1 : 1;
+  updateLCD('mine-count', minesLeft);
+  renderGrid();
+}
+
+function handleChord(r, c) {
+  if (!revealed[r][c] || board[r][c] <= 0) return;
+  let flags = 0;
+  forNeighbors(r, c, (nr, nc) => { if (flagged[nr][nc]) flags++; });
+  if (flags !== board[r][c]) return;
+  let exploded = false;
+  forNeighbors(r, c, (nr, nc) => {
+    if (revealed[nr][nc] || flagged[nr][nc]) return;
+    if (board[nr][nc] === -1) {
+      revealed[nr][nc] = true;
+      exploded = true;
+    } else {
+      floodReveal(nr, nc);
+    }
+  });
+  if (exploded) {
+    gameOver = true;
+    clearInterval(timerInterval);
+    setFace('😵');
+    for (let i = 0; i < cfg.rows; i++)
+      for (let j = 0; j < cfg.cols; j++)
+        if (board[i][j] === -1) revealed[i][j] = true;
+  } else {
+    checkWin();
+  }
+  renderGrid();
+}
+
+function checkWin() {
+  for (let r = 0; r < cfg.rows; r++)
+    for (let c = 0; c < cfg.cols; c++)
+      if (!revealed[r][c] && board[r][c] !== -1) return;
+  gameWon = true;
+  clearInterval(timerInterval);
+  setFace('😎');
+  for (let r = 0; r < cfg.rows; r++)
+    for (let c = 0; c < cfg.cols; c++)
+      if (board[r][c] === -1) { flagged[r][c] = true; }
+  minesLeft = 0;
+  updateLCD('mine-count', 0);
+}
+
+function renderGrid() {
+  const grid = document.getElementById('msw-grid');
+  grid.style.gridTemplateColumns = `repeat(${cfg.cols}, 22px)`;
+  grid.innerHTML = '';
+  for (let r = 0; r < cfg.rows; r++)
+    for (let c = 0; c < cfg.cols; c++) {
+      const cell = document.createElement('div');
+      cell.className = 'msw-cell';
+      const R = r, C = c;
+      cell.addEventListener('click', () => {
+        if (revealed[R][C]) handleChord(R, C);
+        else handleClick(R, C);
+      });
+      cell.addEventListener('contextmenu', e => handleRightClick(e, R, C));
+      if (revealed[r][c]) {
+        if (board[r][c] === -1) {
+          cell.classList.add('mine-hit');
+          cell.textContent = '💣';
+        } else {
+          cell.classList.add('revealed');
+          if (board[r][c] > 0) {
+            cell.textContent = board[r][c];
+            cell.classList.add('msw-n' + board[r][c]);
+          }
+        }
+      } else if (flagged[r][c]) {
+        cell.classList.add('flagged');
+        cell.textContent = '🚩';
+      } else {
+        cell.classList.add('hidden');
+      }
+      grid.appendChild(cell);
+    }
+}
+
+function setFace(e) { document.getElementById('face-btn').textContent = e; }
+
+function updateLCD(id, n) {
+  const v = Math.max(-99, Math.min(999, n));
+  document.getElementById(id).textContent = (v < 0 ? '-' + String(Math.abs(v)).padStart(2, '0') : String(v).padStart(3, '0'));
+}
+
+initGame();
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
