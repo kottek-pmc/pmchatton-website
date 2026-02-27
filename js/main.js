@@ -74,6 +74,7 @@ function runTerminal() {
 //  Window Manager — drag & collapse
 // ============================================================
 let globalZ = 100;
+const MAX_WIN_Z = 9000; // always below menubar (z-index: 9999)
 
 function initWindows() {
   document.querySelectorAll('.window').forEach(win => {
@@ -87,7 +88,7 @@ function initWindows() {
 
     // ── Drag ──────────────────────────────────────────────
     function dragStart(clientX, clientY) {
-      win.style.zIndex = ++globalZ;
+      win.style.zIndex = Math.min(++globalZ, MAX_WIN_Z);
 
       // Sync left/top if already floating but not yet positioned by JS
       if (isFloating && !win.style.left) {
@@ -111,7 +112,7 @@ function initWindows() {
         win.style.top      = rect.top  + 'px';
         win.style.width    = rect.width + 'px';
         win.style.margin   = '0';
-        win.style.zIndex   = globalZ;
+        win.style.zIndex   = Math.min(globalZ, MAX_WIN_Z);
         win.classList.add('floating');
         isFloating = true;
       }
@@ -196,7 +197,7 @@ function initWindows() {
           win.style.top    = barH + 'px';
           win.style.width  = '100vw';
           win.style.height = `calc(100vh - ${barH}px)`;
-          win.style.zIndex = ++globalZ;
+          win.style.zIndex = Math.min(++globalZ, MAX_WIN_Z);
           win.classList.add('maximized');
           isMaximized = true;
         } else {
@@ -219,7 +220,7 @@ function initWindows() {
 
     // ── Bring to front on any click ───────────────────────
     win.addEventListener('mousedown', () => {
-      win.style.zIndex = ++globalZ;
+      win.style.zIndex = Math.min(++globalZ, MAX_WIN_Z);
     }, true);
   });
 }
@@ -276,7 +277,7 @@ function initDesktopIcons() {
         const w = document.getElementById(openId);
         if (w) {
           w.style.display = '';
-          w.style.zIndex = ++globalZ;
+          w.style.zIndex = Math.min(++globalZ, MAX_WIN_Z);
           if (!w._wasShown) {
             w._wasShown = true;
             requestAnimationFrame(() => {

@@ -161,7 +161,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 0 6px;
-    z-index: 1000;
+    z-index: 9999;
     font-family: var(--font-sans);
     font-size: 12px;
     font-weight: bold;
