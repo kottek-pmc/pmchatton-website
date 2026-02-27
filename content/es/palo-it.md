@@ -9,7 +9,7 @@ metrics_label: Cifras Clave
 context_label: Contexto
 achievements_label: Logros
 clients_label: Clientes Clave
-clients: Renault, L'Oréal, Boursorama, Group Up
+clients: Renault, L'Oréal, Boursorama, Group Up, Libon, Arkadin
 
 pill_1: blue | 📅 Marzo 2015 – Septiembre 2018
 pill_2: blue | 📍 París, Francia

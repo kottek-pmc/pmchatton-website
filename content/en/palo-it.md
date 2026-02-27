@@ -7,7 +7,7 @@ window_title: palo-it.md — Hive Master, Pre-Sales and Consultant
 stack_label: Stack & Methods
 metrics_label: Key Metrics
 clients_label: Key Clients
-clients: Renault, L'Oréal, Boursorama, Group Up
+clients: Renault, L'Oréal, Boursorama, Group Up, Libon, Arkadin
 
 pill_1: blue | 📅 March 2015 – September 2018
 pill_2: blue | 📍 Paris, France
@@ -32,7 +32,7 @@ Palo IT is an international tech consultancy (now 700+ people across Asia, Europ
 
 ## Achievements
 
-- Pre-sales engineer: sourced, pitched, and closed engagements with **Renault**, **L'Oréal**, **Boursorama**, and **Group Up**
+- Pre-sales / engagement engineer: planned, pitched, and helped closing engagements with **Renault**, **L'Oréal**, **Boursorama**, and **Group Up**
 - Managed a hive of **10 consultants** across product, engineering, and design disciplines
 - Contributed to company-level business strategy for the Paris office
 - Delivered complex project scoping and technical proposals for digital transformation engagements
