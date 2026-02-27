@@ -34,7 +34,7 @@ Palo IT est une ESN internationale (700+ personnes aujourd'hui en Asie, Europe, 
 
 ## Achievements
 
-- Ingénieur avant-vente : sourcing, présentation et closing de missions auprès de **Renault**, **L'Oréal**, **Boursorama** et **Group Up**
+- Ingénieur avant-vente : planification, présentation et aide au closing de missions auprès de **Renault**, **L'Oréal**, **Boursorama** et **Group Up**
 - Animation d'une ruche de **10 consultants** dans les disciplines produit, engineering et design
 - Contribution à la stratégie d'entreprise au niveau de l'entité parisienne
-- Rédaction de propositions techniques complexes pour des missions de transformation digitale
+- Cadrage et rédaction de propositions techniques complexes pour des missions de transformation digitale

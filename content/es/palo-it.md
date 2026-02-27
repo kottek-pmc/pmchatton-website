@@ -34,7 +34,7 @@ Palo IT es una consultoría tecnológica internacional (hoy 700+ personas en Asi
 
 ## Achievements
 
-- Ingeniero de preventa: captación, presentación y cierre de proyectos con **Renault**, **L'Oréal**, **Boursorama** y **Group Up**
+- Ingeniero de preventa: planificación, presentación y apoyo al cierre de proyectos con **Renault**, **L'Oréal**, **Boursorama** y **Group Up**
 - Gestión de un enjambre de **10 consultores** en disciplinas de producto, ingeniería y diseño
 - Contribución a la estrategia de empresa a nivel de la entidad parisina
-- Elaboración de propuestas técnicas complejas para proyectos de transformación digital
+- Definición de alcance y elaboración de propuestas técnicas complejas para proyectos de transformación digital
