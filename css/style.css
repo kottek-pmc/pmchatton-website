@@ -704,6 +704,52 @@ a:hover {
 }
 
 /* ============================================
+   EDUCATION
+   ============================================ */
+.edu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.edu-card {
+    background: var(--color-bg-subtle);
+    border: 1px solid;
+    border-color: #ffffff #888884 #888884 #ffffff;
+    border-radius: 1px;
+    padding: 10px 12px;
+    flex: 1;
+    min-width: 220px;
+}
+.edu-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+.edu-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+.edu-degree {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+.edu-school {
+    font-size: 11px;
+    color: var(--color-text-muted);
+    margin-bottom: 2px;
+    text-align: center;
+}
+.edu-period {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--color-text-subtle);
+    text-align: center;
+}
+
+/* ============================================
    CONTACT
    ============================================ */
 .contact-grid {

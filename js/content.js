@@ -306,17 +306,16 @@
 
         var eduEl = el('education-block');
         if (eduEl && data.education) {
-          var cards = data.education.map(function (e) {
-            return '<div style="display:flex;gap:10px;align-items:flex-start;padding:10px 12px;' +
-              'background:var(--color-surface-2);border:1px solid;' +
-              'border-color:#888884 #ffffff #ffffff #888884;border-radius:2px;flex:1;min-width:220px">' +
-              '<span style="font-size:24px;flex-shrink:0">' + e.icon + '</span><div>' +
-              '<div style="font-weight:bold;font-size:13px;color:var(--color-text)">' + e.degree + '</div>' +
-              '<div style="font-size:11px;color:var(--color-text-muted)">' + e.school + '</div>' +
-              '<div style="font-family:var(--font-mono);font-size:10px;color:var(--color-text-subtle)">' + e.period + '</div>' +
-              '</div></div>';
-          }).join('');
-          eduEl.innerHTML = '<div style="display:flex;flex-wrap:wrap;gap:10px">' + cards + '</div>';
+          eduEl.innerHTML = '<div class="edu-grid">' + data.education.map(function (e) {
+            return '<div class="edu-card">' +
+              '<div class="edu-card-header">' +
+              '<span class="edu-icon">' + e.icon + '</span>' +
+              '<span class="edu-degree">' + e.degree + '</span>' +
+              '</div>' +
+              '<div class="edu-school">' + e.school + '</div>' +
+              '<div class="edu-period">' + e.period + '</div>' +
+              '</div>';
+          }).join('') + '</div>';
         }
       });
   }
