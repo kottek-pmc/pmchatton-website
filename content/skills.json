@@ -35,7 +35,10 @@
         "CI/CD",
         "Agile / Scrum",
         "Web3",
-        "Blockchain"
+        "Blockchain",
+        "AI",
+        "Rag",
+        "LLM"
       ]
     },
     {
@@ -63,7 +66,7 @@
     {
       "icon": "🛠",
       "title": "Tools",
-      "items": ["Jira", "Notion", "Figma", "Trello"]
+      "items": ["Jira", "Notion", "Figma", "Trello", "Google suite"]
     }
   ],
   "languages": [
