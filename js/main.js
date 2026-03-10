@@ -81,14 +81,14 @@ function initWindows() {
     const titlebar = win.querySelector('.window-titlebar');
     if (!titlebar) return;
 
-    let isFloating = win.style.position === 'fixed';
     let isDragging = false;
-    let placeholder = null;
     let dragOffX = 0, dragOffY = 0;
 
     // ── Drag ──────────────────────────────────────────────
     function dragStart(clientX, clientY) {
-      win.style.zIndex = Math.min(++globalZ, MAX_WIN_Z);
+      bringToFront(win);
+
+      const isFloating = win.classList.contains('floating');
 
       // Sync left/top if already floating but not yet positioned by JS
       if (isFloating && !win.style.left) {
@@ -98,23 +98,7 @@ function initWindows() {
       }
 
       if (!isFloating) {
-        const rect = win.getBoundingClientRect();
-
-        // Hold the space in the layout
-        placeholder = document.createElement('div');
-        placeholder.style.cssText =
-          `width:${rect.width}px;height:${rect.height}px;flex-shrink:0;pointer-events:none;visibility:hidden`;
-        win.parentNode.insertBefore(placeholder, win);
-
-        // Detach to fixed
-        win.style.position = 'fixed';
-        win.style.left     = rect.left + 'px';
-        win.style.top      = rect.top  + 'px';
-        win.style.width    = rect.width + 'px';
-        win.style.margin   = '0';
-        win.style.zIndex   = Math.min(globalZ, MAX_WIN_Z);
-        win.classList.add('floating');
-        isFloating = true;
+        floatWindow(win, false);
       }
 
       isDragging = true;
@@ -163,12 +147,12 @@ function initWindows() {
     // ── Collapse: double-click titlebar ───────────────────
     titlebar.addEventListener('dblclick', e => {
       if (e.target.closest('.window-buttons')) return;
-      toggleCollapse(win, placeholder);
+      toggleCollapse(win);
     });
 
     // ── Minimize button (yellow) ──────────────────────────
     win.querySelector('.btn-minimize')
-      ?.addEventListener('click', () => toggleCollapse(win, placeholder));
+      ?.addEventListener('click', () => toggleCollapse(win));
 
     // ── Maximize button (green) ───────────────────────────
     let isMaximized = false;
@@ -176,20 +160,8 @@ function initWindows() {
     win.querySelector('.btn-maximize')
       ?.addEventListener('click', () => {
         if (!isMaximized) {
-          // Float first if not already
-          if (!isFloating) {
-            const rect = win.getBoundingClientRect();
-            placeholder = document.createElement('div');
-            placeholder.style.cssText =
-              `width:${rect.width}px;height:${rect.height}px;flex-shrink:0;pointer-events:none;visibility:hidden`;
-            win.parentNode.insertBefore(placeholder, win);
-            win.style.position = 'fixed';
-            win.style.left   = rect.left + 'px';
-            win.style.top    = rect.top  + 'px';
-            win.style.width  = rect.width + 'px';
-            win.style.margin = '0';
-            win.classList.add('floating');
-            isFloating = true;
+          if (!win.classList.contains('floating')) {
+            floatWindow(win, false);
           }
           preMaxState = { left: win.style.left, top: win.style.top, width: win.style.width, height: win.style.height };
           const barH = document.querySelector('.menubar')?.offsetHeight || 26;
@@ -197,7 +169,7 @@ function initWindows() {
           win.style.top    = barH + 'px';
           win.style.width  = '100vw';
           win.style.height = `calc(100vh - ${barH}px)`;
-          win.style.zIndex = Math.min(++globalZ, MAX_WIN_Z);
+          bringToFront(win);
           win.classList.add('maximized');
           isMaximized = true;
         } else {
@@ -213,24 +185,23 @@ function initWindows() {
     // ── Close button (red) ────────────────────────────────
     win.querySelector('.btn-close')
       ?.addEventListener('click', () => {
-        win._placeholder = placeholder;
         win.style.display = 'none';
-        if (placeholder) placeholder.style.display = 'none';
+        if (win._placeholder) win._placeholder.style.display = 'none';
       });
 
     // ── Bring to front on any click ───────────────────────
     win.addEventListener('mousedown', () => {
-      win.style.zIndex = Math.min(++globalZ, MAX_WIN_Z);
+      bringToFront(win);
     }, true);
   });
 }
 
-function toggleCollapse(win, placeholder) {
+function toggleCollapse(win) {
   win.classList.toggle('collapsed');
   // Sync placeholder height after reflow
-  if (placeholder) {
+  if (win._placeholder) {
     requestAnimationFrame(() => {
-      placeholder.style.height = win.offsetHeight + 'px';
+      win._placeholder.style.height = win.offsetHeight + 'px';
     });
   }
 }
@@ -262,6 +233,51 @@ function initScrollNav() {
 }
 
 // ============================================================
+//  Float a window — detach from flow → position:fixed
+// ============================================================
+function bringToFront(win) {
+  win.style.zIndex = Math.min(++globalZ, MAX_WIN_Z);
+}
+
+function floatWindow(win, centerInViewport) {
+  if (win.classList.contains('floating')) {
+    // Already floating — just show + focus
+    win.style.display = '';
+    bringToFront(win);
+    return;
+  }
+
+  const rect = win.getBoundingClientRect();
+
+  // Placeholder to hold layout space
+  const ph = document.createElement('div');
+  ph.style.cssText =
+    `width:${rect.width}px;height:${rect.height}px;flex-shrink:0;pointer-events:none;visibility:hidden`;
+  win.parentNode.insertBefore(ph, win);
+  win._placeholder = ph;
+
+  // Detach to fixed
+  win.style.position = 'fixed';
+  win.style.margin   = '0';
+  win.classList.add('floating');
+
+  if (centerInViewport) {
+    // Position centered, offset each successive window slightly
+    const barH = document.querySelector('.menubar')?.offsetHeight || 28;
+    win.style.width = rect.width + 'px';
+    win.style.left  = Math.max(10, (window.innerWidth  - rect.width)  / 2) + 'px';
+    win.style.top   = Math.max(barH + 10, (window.innerHeight - rect.height) / 3) + 'px';
+  } else {
+    // Keep current visual position
+    win.style.left  = rect.left + 'px';
+    win.style.top   = rect.top  + 'px';
+    win.style.width = rect.width + 'px';
+  }
+
+  bringToFront(win);
+}
+
+// ============================================================
 //  Desktop icon single-click selection feedback
 // ============================================================
 function initDesktopIcons() {
@@ -277,7 +293,7 @@ function initDesktopIcons() {
         const w = document.getElementById(openId);
         if (w) {
           w.style.display = '';
-          w.style.zIndex = Math.min(++globalZ, MAX_WIN_Z);
+          bringToFront(w);
           if (!w._wasShown) {
             w._wasShown = true;
             requestAnimationFrame(() => {
@@ -290,14 +306,28 @@ function initDesktopIcons() {
         return;
       }
 
-      // Reopen section window if it was closed
+      // Section icon (#about, #experience, etc.) — float the window
       const href = icon.getAttribute('href');
       if (href && href.startsWith('#')) {
-        const win = document.querySelector(href + ' .window');
-        if (win && win.style.display === 'none') {
-          win.style.display = '';
-          if (win._placeholder) win._placeholder.style.display = '';
-        }
+        e.preventDefault();
+        const section = document.querySelector(href);
+        if (!section) return;
+        const wins = section.querySelectorAll('.window');
+        let offset = 0;
+        wins.forEach(win => {
+          // Reopen if closed
+          if (win.style.display === 'none') {
+            win.style.display = '';
+            if (win._placeholder) win._placeholder.style.display = '';
+          }
+          floatWindow(win, true);
+          // Cascade successive windows so they don't stack exactly
+          if (offset > 0) {
+            win.style.left = (parseFloat(win.style.left) + offset) + 'px';
+            win.style.top  = (parseFloat(win.style.top)  + offset) + 'px';
+          }
+          offset += 30;
+        });
       }
     });
   });
