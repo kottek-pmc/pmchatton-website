@@ -1049,9 +1049,18 @@ footer a {
     user-select: none;
 }
 
-/* Floating window gets a deeper shadow */
+/* Floating window gets a deeper shadow + scrollable content */
 .window.floating {
     box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.55);
+    max-height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
+}
+.window.floating .window-content,
+.window.floating .terminal {
+    overflow-y: auto;
+    flex: 1;
+    min-height: 0;
 }
 
 /* Maximized: fill viewport, content scrolls */
