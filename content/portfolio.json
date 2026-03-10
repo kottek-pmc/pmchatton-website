@@ -26,6 +26,12 @@
           "name": "Libon",
           "tagline": "Call and support your family",
           "url": "https://www.libon.com/en"
+        },
+        {
+          "emoji": "🌍",
+          "name": "Terraperf",
+          "tagline": "Terraform code analysis — security, efficiency & maintainability",
+          "url": "https://terraperf.com"
         }
       ]
     },

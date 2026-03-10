@@ -378,6 +378,7 @@
       loadHomePage();
       loadSkills();
       loadExpTitles();
+      loadPortfolioPage();
     }
   });
 

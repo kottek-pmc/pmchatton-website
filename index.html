@@ -48,6 +48,7 @@
                 <a
                     href="portfolio.html"
                     class="desktop-icon"
+                    data-open="portfolio-window"
                 >
                     <div class="icon-img">🖼️</div>
                     <span class="icon-lbl">portfolio</span>
@@ -405,6 +406,25 @@
 
         <script src="js/content.js"></script>
         <script src="js/main.js"></script>
+
+        <!-- ── Portfolio floating window ──────────────────────── -->
+        <div class="window floating" id="portfolio-window" style="position:fixed; display:none; width:480px;">
+            <div class="window-titlebar">
+                <div class="window-buttons">
+                    <span class="btn-close"></span>
+                    <span class="btn-minimize"></span>
+                    <span class="btn-maximize"></span>
+                </div>
+                <span class="window-title">portfolio.json — Projects</span>
+            </div>
+            <div class="section-header">
+                <span class="section-tag">ls</span>
+                <h1 class="section-title">Portfolio</h1>
+            </div>
+            <div class="window-content" style="padding-top: 12px">
+                <div class="portfolio-grid" id="portfolio-grid"></div>
+            </div>
+        </div>
 
         <!-- ── Minesweeper floating window ───────────────────── -->
         <div class="window floating" id="msw-window" style="position:fixed; display:none;">
