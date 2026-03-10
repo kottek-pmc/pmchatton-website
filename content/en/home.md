@@ -1,8 +1,8 @@
 ---
-tagline: // product manager · builder · data nerd
+tagline: // Managing Director · Product Manager · Founder
 name: Pierre-Marie
 name2: Chatton
-role: Managing Director · Product Manager · Founder
+role:
 
 stat_1: {{years_exp}} | Years exp.
 stat_2: 7 | Companies
