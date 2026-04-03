@@ -31,7 +31,13 @@
           "emoji": "🌍",
           "name": "Terraperf",
           "tagline": "Terraform code analysis — security, efficiency & maintainability",
-          "url": "https://terraperf.com"
+          "url": "https://app.terraperf.com"
+        },
+        {
+          "emoji": "🎯",
+          "name": "My Job Hunt",
+          "tagline": "Find, curate and keep track of your job applications",
+          "url": "https://myjobhunts.com"
         }
       ]
     },
