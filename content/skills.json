@@ -21,7 +21,9 @@
         "Cohort analysis",
         "Mixpanel",
         "Hotjar",
-        "Real-time dashboards"
+        "Real-time dashboards",
+        "Google Analytics",
+        "Metabase"
       ]
     },
     {
@@ -66,7 +68,7 @@
     {
       "icon": "🛠",
       "title": "Tools",
-      "items": ["Jira", "Notion", "Figma", "Trello", "Google suite"]
+      "items": ["Jira", "Notion", "Figma", "Trello", "Google suite", "Linear"]
     }
   ],
   "languages": [
