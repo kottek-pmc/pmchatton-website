@@ -10,7 +10,7 @@ context_label: Contexte
 achievements_label: Réalisations
 
 pill_1: orange | 📅 Octobre 2018 – Présent
-pill_2: blue | 📍 Plouézec, France
+pill_2: blue | 📍 France
 pill_3: purple | 🏢 Conseil
 pill_4: green | 👥 5 collaborateurs · 500 K€ de CA
 

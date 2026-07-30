@@ -8,7 +8,7 @@ stack_label: Capabilities Delivered to Clients
 metrics_label: Key Metrics
 
 pill_1: orange | 📅 October 2018 – Present
-pill_2: blue | 📍 Plouézec, France
+pill_2: blue | 📍 France
 pill_3: purple | 🏢 Consultancy
 pill_4: green | 👥 5 employees · €500K revenue
 

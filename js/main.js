@@ -21,7 +21,7 @@ const terminalLines = [
   { delay: 600,  type: 'open',     text: '{' },
   { delay: 780,  type: 'kv',       key: '"name"',        value: '"Pierre-Marie Chatton"' },
   { delay: 920,  type: 'kv',       key: '"role"',         value: '"Product Manager / Managing Director"' },
-  { delay: 1060, type: 'kv',       key: '"location"',     value: '"Plouézec, France"' },
+  { delay: 1060, type: 'kv',       key: '"location"',     value: '"France"' },
   { delay: 1200, type: 'kv',       key: '"experience"',   value: '"' + expYears + ' years"' },
   { delay: 1340, type: 'kv',       key: '"languages"',    value: '["French", "English", "Spanish", "German"]' },
   { delay: 1480, type: 'kv',       key: '"specialties"',  value: '["0→1 products", "B2B SaaS", "Data", "Compliance"]' },

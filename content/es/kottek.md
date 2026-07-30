@@ -10,7 +10,7 @@ context_label: Contexto
 achievements_label: Logros
 
 pill_1: orange | 📅 Octubre 2018 – Presente
-pill_2: blue | 📍 Plouézec, Francia
+pill_2: blue | 📍 Francia
 pill_3: purple | 🏢 Consultoría
 pill_4: green | 👥 5 empleados · 500 K€ de facturación
 
