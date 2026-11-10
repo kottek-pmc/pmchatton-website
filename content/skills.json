@@ -4,6 +4,7 @@
       "icon": "🗺",
       "title": "Product Strategy",
       "items": [
+        "Product management",
         "Roadmap ownership",
         "0→1 builds",
         "Prioritization",
@@ -40,7 +41,8 @@
         "Blockchain",
         "AI",
         "Rag",
-        "LLM"
+        "LLM",
+        "Agentic workflows"
       ]
     },
     {
@@ -68,32 +70,67 @@
     {
       "icon": "🛠",
       "title": "Tools",
-      "items": ["Jira", "Notion", "Figma", "Trello", "Google suite", "Linear"]
+      "items": [
+        "Jira",
+        "Notion",
+        "Figma",
+        "Trello",
+        "Google suite",
+        "Linear"
+      ]
+    },
+    {
+      "icon": "📜",
+      "title": "Certifications",
+      "items": [
+        "ITIL v3 Foundation",
+        "Management 3.0"
+      ]
     }
   ],
   "languages": [
-    { "flag": "🇫🇷", "name": "French", "level": "Native" },
-    { "flag": "🇬🇧", "name": "English", "level": "Bilingual" },
-    { "flag": "🇪🇸", "name": "Spanish", "level": "Bilingual" },
-    { "flag": "🇩🇪", "name": "German", "level": "Professional" },
-    { "flag": "🇵🇱", "name": "Polish", "level": "Żabka" }
+    {
+      "flag": "🇫🇷",
+      "name": "French",
+      "level": "Native"
+    },
+    {
+      "flag": "🇬🇧",
+      "name": "English",
+      "level": "Bilingual"
+    },
+    {
+      "flag": "🇪🇸",
+      "name": "Spanish",
+      "level": "Bilingual"
+    },
+    {
+      "flag": "🇩🇪",
+      "name": "German",
+      "level": "Professional"
+    },
+    {
+      "flag": "🇵🇱",
+      "name": "Polish",
+      "level": "Żabka"
+    }
   ],
   "education": [
     {
       "icon": "🎓",
-      "degree": "Ingénieur — ENST Bretagne",
-      "school": "Telecom Bretagne · Brest, France",
+      "degree": "Ingénieur — IMT Atlantique",
+      "school": "ex-Telecom Bretagne / ENST Bretagne · Brest, France",
       "period": "2002–2005 · Networks & Telecommunications"
     },
     {
       "icon": "🇫🇮",
       "degree": "Exchange Program",
       "school": "Kemi-Tornio Polytechnic · Tornio, Finland",
-      "period": "2001 · International communcation, Radio and Video editing, Project management & web design"
+      "period": "2001 · International communication, Radio and Video editing, Project management & web design"
     },
     {
       "icon": "🎓",
-      "degree": "DUT Télécommunications et Réseaux",
+      "degree": "DUT — Université de Rennes I",
       "school": "IUT Génie Télécommunications et Réseaux · Saint-Malo, France",
       "period": "1999–2001 · Networks & Telecommunications"
     }

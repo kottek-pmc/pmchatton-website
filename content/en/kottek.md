@@ -1,36 +1,36 @@
 ---
 emoji: 🚀
-title: Founder & Managing Director
-company: Kottek — Product & Project Management Consultancy
+title: Founder
+company: Kottek — Product & Delivery Consultancy
 company_short: Kottek · 2018–Present
-window_title: kottek.md — Founder & Managing Director
+window_title: kottek.md — Founder
 stack_label: Capabilities Delivered to Clients
 metrics_label: Key Metrics
 
-pill_1: orange | 📅 October 2018 – Present
-pill_2: blue | 📍 France
-pill_3: purple | 🏢 Consultancy
-pill_4: green | 👥 5 employees · €500K revenue
+pill_1: orange | 📅 November 2018 – Present
+pill_2: blue | 📍 Greater Paris
+pill_3: purple | 🏢 Consultancy · Scale-ups & fintechs
+pill_4: green | 👥 4 employees · €500K revenue
 
-stack: Product roadmap definition, Discovery & user research, Sprint facilitation, Technical pre-sales, Team building, Stakeholder management, OKR setup
+stack: Product management, Delivery management, Technical product ownership, Agile transformation, Discovery & user research, Team building, Stakeholder management
 
 metric_1: €500K | Revenue achieved | orange
-metric_2: 5 | Employees | green
-metric_3: 6+ | Years running | blue
+metric_2: 4 | Employees | green
+metric_3: 7+ | Years running | blue
 
 nav_prev_url: nuant.html
-nav_prev_label: Nuant — Head of Ops / MD
-nav_next_url: partakus.html
-nav_next_label: Partakus — Head of Projects
+nav_prev_label: Nuant — Lead PM / MD France
+nav_next_url: winbin.html
+nav_next_label: WinBin — Co-Founder
 ---
 
 ## Context
 
-Kottek is a digital consultancy I founded to bring senior Product and Project Management expertise to growing tech companies. Running in parallel with my role at Nuant, it reflects my commitment to building sustainable independent work alongside embedded leadership roles.
+Kottek is a product and delivery consultancy I founded to work with scale-ups and fintechs. It served as the contracting vehicle for my first two years at Kadensis and my first two years at Nuant; both clients then hired me full-time.
 
 ## Achievements
 
-- Founded the consultancy from zero — grew revenue to **€500K** with **5 employees**
-- Full ownership of the sales pipeline: prospecting, pitching, scoping, closing, and delivery
-- Built a network of senior PM and engineering consultants for project-based staffing
-- Managed end-to-end client relationships across fintech, automotive, and B2B SaaS sectors
+- Contracting vehicle for my first **2 years** at Kadensis and my first **2 years** at Nuant; both clients then hired me full-time
+- Founded the consultancy from zero and grew revenue to **€500K** with **4 employees**
+- Hired and managed a team of **4 consultants** on client missions
+- Selected missions alongside: Technical Product Owner for an art tokenization startup; Agile transformation consulting

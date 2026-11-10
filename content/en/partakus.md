@@ -1,36 +1,37 @@
 ---
 emoji: 🚗
 title: Head of Projects
-company: Partakus — Automotive Marketplace
-company_short: Partakus · 2017–2021
+company: Kadensis — Partakus, B2B automotive spare parts marketplace
+company_short: Kadensis · 2017–2021
 window_title: partakus.md — Head of Projects
 stack_label: Stack & Methods
 metrics_label: Key Metrics
 
 pill_1: purple | 📅 September 2017 – February 2021
-pill_2: blue | 📍 Paris, France
-pill_3: orange | 🏢 Automotive · Marketplace
-pill_4: green | 🌍 3 countries deployed
+pill_2: blue | 📍 Greater Paris
+pill_3: orange | 🏢 Automotive · B2B Marketplace
+pill_4: green | 🌍 France · Spain · Morocco
 
-stack: Agile / Scrum, Product discovery, User testing, Prototyping, KPI definition, Jira, Multi-country deployment, B2B marketplace
+stack: Agile / Scrum, Integration layer (external APIs), Field discovery, Prototyping, User testing, KPI definition, Jira, Multi-country deployment, B2B marketplace
 
 metric_1: 3 | Countries deployed | purple
 metric_2: 3 | PMs managed | green
+metric_3: ÷2 | Deployment time & cost per market | orange
+metric_4: 200+ | Vendors onboarded | blue
 
-nav_prev_url: kottek.html
-nav_prev_label: Kottek — Founder
+nav_prev_url: winbin.html
+nav_prev_label: WinBin — Co-Founder
 nav_next_url: palo-it.html
-nav_next_label: Palo IT — Hive Master
+nav_next_label: PALO IT — Consultant & Hive Master
 ---
 
 ## Context
 
-Partakus is a B2B digital marketplace in the automotive sector, connecting spare parts dealers and garages across multiple markets. I joined to lead deployment of marketplace services across international markets and bridge Product and Engineering teams.
+Partakus is a B2B marketplace for automotive spare parts, deployed in France, Spain and Morocco. I joined as a PALO IT consultant in 2017, continued via Kottek, my consultancy, in 2018, and was hired full-time in 2020.
 
 ## Achievements
 
-- Deployed digital marketplace services across **3 countries** — France, Spain, and Morocco — managing a team of **3 Product Managers**
-- Bridged Product and Engineering: end-to-end discovery, prototyping, user testing, and requirements definition
-- KPI-driven service delivery — optimized deployment time and cost per market through process standardization
-- Established cross-market product governance to ensure consistency while adapting to local regulatory and business contexts
-- Managed stakeholder relationships across C-suite, operational teams, and external partners in multiple languages
+- Deployed the marketplace across **3 countries** (France, Spain, Morocco); managed **3 PMs** directly
+- Owned the roadmap of the integration layer (external APIs); led field discovery, prototyping and user testing
+- KPI-driven delivery: reduced deployment time and cost per market **by half**
+- **200+ vendors** onboarded on the platform

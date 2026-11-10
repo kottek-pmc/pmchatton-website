@@ -1,38 +1,38 @@
 ---
 emoji: 🚀
-title: Fundador & Director General
-company: Kottek — Consultoría de Product & Project Management
-company_short: Kottek · 2018–Presente
-window_title: kottek.md — Fundador & Director General
-stack_label: Servicios a Clientes
+title: Fundador
+company: Kottek — Consultora de Producto & Delivery
+company_short: Kottek · 2018–Actualidad
+window_title: kottek.md — Fundador
+stack_label: Capacidades Aportadas a Clientes
 metrics_label: Cifras Clave
 context_label: Contexto
 achievements_label: Logros
 
-pill_1: orange | 📅 Octubre 2018 – Presente
-pill_2: blue | 📍 Francia
-pill_3: purple | 🏢 Consultoría
-pill_4: green | 👥 5 empleados · 500 K€ de facturación
+pill_1: orange | 📅 Noviembre 2018 – Actualidad
+pill_2: blue | 📍 Área metropolitana de París
+pill_3: purple | 🏢 Consultoría · Scale-ups & fintechs
+pill_4: green | 👥 4 empleados · 500 K€ de facturación
 
-stack: Definición de roadmap de producto, Discovery e investigación de usuarios, Facilitación de sprints, Preventa técnica, Construcción de equipos, Gestión de stakeholders, Implementación de OKR
+stack: Product management, Delivery management, Technical product ownership, Transformación Agile, Discovery & investigación de usuarios, Creación de equipos, Gestión de stakeholders
 
-metric_1: €500K | Facturación alcanzada | orange
-metric_2: 5 | Empleados | green
-metric_3: 6+ | Años en activo | blue
+metric_1: 500 K€ | Facturación alcanzada | orange
+metric_2: 4 | Empleados | green
+metric_3: 7+ | Años en actividad | blue
 
 nav_prev_url: nuant.html
-nav_prev_label: Nuant — Head of Ops / DG
-nav_next_url: partakus.html
-nav_next_label: Partakus — Director de Proyectos
+nav_prev_label: Nuant — Lead PM / DG Francia
+nav_next_url: winbin.html
+nav_next_label: WinBin — Cofundador
 ---
 
 ## Context
 
-Kottek es una consultoría digital que fundé para aportar experiencia senior en Product y Project Management a empresas tecnológicas en crecimiento. Activa en paralelo con mi rol en Nuant, refleja mi convicción de construir trabajo independiente sostenible junto a posiciones de liderazgo embedded.
+Kottek es una consultora de producto y delivery que fundé para trabajar con scale-ups y fintechs. Sirvió como vehículo contractual durante mis dos primeros años en Kadensis y mis dos primeros años en Nuant; ambos clientes me contrataron después a tiempo completo.
 
 ## Achievements
 
-- Fundación de la consultoría desde cero — facturación llevada a **€500K** con **5 empleados**
-- Gestión integral del pipeline comercial: prospección, presentación, definición de alcance, cierre y entrega
-- Construcción de una red de consultores senior de PM e ingeniería para staffing por proyectos
-- Gestión de relaciones con clientes de extremo a extremo en sectores fintech, automoción y B2B SaaS
+- Vehículo contractual durante mis **2 primeros años** en Kadensis y mis **2 primeros años** en Nuant; ambos clientes me contrataron después a tiempo completo
+- Fundación de la consultora desde cero y facturación llevada a **500 K€** con **4 empleados**
+- Contratación y gestión de un equipo de **4 consultores** en misiones para clientes
+- Misiones paralelas seleccionadas: Technical Product Owner para una startup de tokenización de arte; consultoría en transformación Agile

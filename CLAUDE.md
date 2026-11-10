@@ -22,19 +22,22 @@ open index.html   # works but relative paths may behave differently
 
 ```
 index.html                  ← Home page (about, experience list, skills, contact)
-experience/
-  nuant.html                ← PM / MD at Nuant (2021–2025)
+experience/                 ← shell templates; content comes from content/{lang}/{slug}.md
+  nuant.html                ← Lead PM / MD France at Nuant (2021–2026)
   kottek.html               ← Founder at Kottek (2018–present)
-  partakus.html             ← Head of Projects at Partakus (2017–2021)
-  palo-it.html              ← BU Manager at Palo IT (2015–2018)
-  libon.html                ← Product Owner at Libon/Orange (2014–2017)
-  orange-spain.html         ← Test & Validation Mgr at Orange Spain (2008–2014)
+  winbin.html               ← Co-Founder (side venture) at WinBin (2019–2025)
+  partakus.html             ← Head of Projects at Kadensis / Partakus (2017–2021)
+  palo-it.html              ← Consultant & Hive Master at PALO IT (2016–2018)
+  libon.html                ← Product Owner at Libon / Orange Vallée (2014–2017)
+  orange-spain.html         ← Test & Validation Leader at Orange Spain (2008–2014)
   niji.html                 ← Solution Engineer at Niji (2006–2010)
+  silicomp.html             ← Network Software Engineer at Silicomp-AQL (2005–2006)
+  coopagri.html             ← Engineer Trainee at Coopagri Bretagne (2002–2005)
 css/style.css               ← All styles (single file)
 js/main.js                  ← Clock, terminal typewriter effect, active nav
 ```
 
-Source data lives in `../job_research/cv/CV_PMC_PM_EN.html` — the primary reference for all professional content.
+Source of truth for professional content is the LinkedIn profile (https://www.linkedin.com/in/pierremariechatton/, exported as PDF in ~/Downloads/Profile.pdf on 2026-11-10). `../job_research/cv/` holds older CV variants.
 
 ## Design System
 

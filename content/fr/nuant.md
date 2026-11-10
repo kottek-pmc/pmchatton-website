@@ -1,25 +1,25 @@
 ---
 emoji: 🏦
-title: Head of Operations / PM / Directeur Général
-company: Nuant — SaaS pour asset managers digitaux
-company_short: Nuant · 2021–2025
-window_title: nuant.md — Head of Operations / PM / Directeur Général
+title: Lead Product Manager / Directeur Général France
+company: Nuant — Plateforme data & analytics pour investisseurs en actifs numériques
+company_short: Nuant · 2021–2026
+window_title: nuant.md — Lead Product Manager / Directeur Général France
 stack_label: Stack & Outils
 metrics_label: Chiffres Clés
 context_label: Contexte
 achievements_label: Réalisations
 
-pill_1: green | 📅 Mars 2021 – Octobre 2025
-pill_2: blue | 📍 Paris / Zoug
+pill_1: green | 📅 Juillet 2021 – Février 2026
+pill_2: blue | 📍 Zoug, Suisse · Paris
 pill_3: orange | 🏢 Fintech · B2B SaaS
-pill_4: purple | 👥 16 collaborateurs · 2 M€ de CA
+pill_4: purple | 👥 16 personnes · 2 M€ de budget
 
-stack: Python, SQL, REST APIs, Flux temps réel, SOC2, ISO 27001, Jira, Figma, Agile / Scrum, Pipelines de données, Dashboards de monitoring
+stack: Python, SQL, REST APIs, Flux temps réel, Configuration agentique, Workflow de développement agentique, SOC2, ISO 27001, Jira, Figma, Agile / Scrum, Pipelines de données, Dashboards de monitoring
 
-metric_1: 16 | Collaborateurs à terme | green
-metric_2: €2M | Chiffre d'affaires annuel | orange
-metric_3: 150+ | Utilisateurs simulateur | blue
-metric_4: 3 | Produits data livrés | purple
+metric_1: 10 % → 80 % | Activation du simulateur | green
+metric_2: 16 | Personnes dans la filiale française | orange
+metric_3: 150+ | Utilisateurs du simulateur | blue
+metric_4: 3× | Livraison front-end plus rapide | purple
 
 nav_prev_dir: ← Retour
 nav_prev_url: ../index.html#experience
@@ -30,13 +30,14 @@ nav_next_label: Kottek — Fondateur
 
 ## Context
 
-Nuant est une plateforme B2B SaaS au service des gestionnaires d'actifs digitaux et des utilisateurs DeFi. J'ai d'abord été recruté pour gérer l'infrastructure en tant que Product Manager, avant de pivoter rapidement vers le product management des produits Data Stream et Simulateur, et de créer la filiale française de zéro. Rôle couteau suisse : Product Manager, Head of Operations et Directeur Général.
+Nuant est une plateforme data & analytics pour les investisseurs institutionnels en actifs numériques et DeFi. J'ai rejoint l'entreprise via Kottek, mon cabinet, en juillet 2021, puis j'ai été embauché en CDI en juin 2023. J'ai créé la filiale française de zéro et porté la stratégie produit des trois produits data de la plateforme.
 
 ## Achievements
 
-- Création de Nuant France de zéro — montée en charge à **16 collaborateurs** et **2 M€ de CA**
-- Pilotage du product management pour **3 produits data** (simulateur, flux temps réel, dashboards de monitoring) avec une équipe de **10 ingénieurs**
-- Construction du produit data stream de 0 à activité autonome — spin-off en ligne de revenu indépendante
-- Simulateur porté de **0 à 150+ utilisateurs** par développement itératif et boucles de feedback client directs
-- Développement de dashboards analytiques (Python, SQL) utilisés quotidiennement par les équipes quant des clients institutionnels
-- Conduite des certifications **SOC2 et ISO 27001** — conception des pistes d'audit et fonctionnalités de gouvernance devenues leviers de vente enterprise
+- Création de la filiale française de zéro : montée en charge à **16 personnes** et **2 M€ de budget** ; recrutement et pilotage de l'équipe d'ingénierie de **1 à 10**
+- Pivot du simulateur de trading vers la configuration agentique après que les premiers utilisateurs ont trouvé la mise en place trop complexe : activation passée de **10 % à 80 %**, **150+ utilisateurs**
+- Produit de flux de données temps réel porté de 0 à une ligne de revenu autonome et auto-financée
+- Conduite des certifications **SOC2 et ISO 27001** ; conception des pistes d'audit et fonctionnalités de gouvernance devenues leviers de vente enterprise
+- Introduction d'un workflow de développement agentique sur le front-end du simulateur, divisant le temps de livraison par **3**
+- Stratégie de **3 produits data** (simulateur, flux temps réel, dashboards de monitoring) ; construction d'analyses Python/SQL utilisées quotidiennement par les équipes quant
+- Mentorat d'un tech lead devenu CTO d'une filiale en **6 mois**

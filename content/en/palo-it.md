@@ -1,38 +1,39 @@
 ---
 emoji: 💼
-title: Hive Master, Pre-Sales and Consultant
-company: Palo IT — Tech Consultancy (50 people, €12M)
-company_short: Palo IT · 2015–2018
-window_title: palo-it.md — Hive Master, Pre-Sales and Consultant
+title: Consultant & Hive Master
+company: PALO IT — Agile & product consultancy
+company_short: PALO IT · 2016–2018
+window_title: palo-it.md — Consultant & Hive Master
 stack_label: Stack & Methods
 metrics_label: Key Metrics
 clients_label: Key Clients
-clients: Renault, L'Oréal, Boursorama, Group Up, Libon, Arkadin
+clients: Partakus, Arkadin, Libon (Orange), Renault, L'Oréal, Boursorama, Group Up
 
-pill_1: blue | 📅 March 2015 – September 2018
-pill_2: blue | 📍 Paris, France
-pill_3: purple | 🏢 Tech Consultancy
-pill_4: orange | 👥 10 consultants managed
+pill_1: blue | 📅 March 2016 – October 2018
+pill_2: blue | 📍 Greater Paris
+pill_3: purple | 🏢 Agile & Product Consultancy
+pill_4: orange | 👥 8–10 consultants managed
 
-stack: Pre-sales engineering, Agile coaching, P&L management, Team management, Consulting delivery
+stack: Product ownership, Business analysis, Pre-sales & bid building, Agile coaching, Line management, Career paths & staffing
 
-metric_1: 10 | Consultants managed | blue
-metric_2: €12M | Company revenue | orange
-metric_3: 4 | Major accounts closed | purple
+metric_1: €1.2M | Partakus bid won | orange
+metric_2: 11 | Consultants staffed on the bid | purple
+metric_3: 8–10 | Consultants line-managed | blue
 
 nav_prev_url: partakus.html
-nav_prev_label: Partakus — Head of Projects
+nav_prev_label: Kadensis — Head of Projects
 nav_next_url: libon.html
 nav_next_label: Libon — Product Owner
 ---
 
 ## Context
 
-Palo IT is an international tech consultancy (now 700+ people across Asia, Europe, Austrlia and South America). In the Paris office, I wore two hats: running a hive of 10 consultants while working as consultant for several clients (Orange, Boursorama, Arkadin, Renault, etc.).
+PALO IT is an agile and product consultancy. In the Paris office I led client missions while line-managing 8–10 consultants as Hive Master.
 
 ## Achievements
 
-- Pre-sales / engagement engineer: planned, pitched, and helped closing engagements with **Renault**, **L'Oréal**, **Boursorama**, and **Group Up**
-- Managed a hive of **10 consultants** across product, engineering, and design disciplines
-- Contributed to company-level business strategy for the Paris office
-- Delivered complex project scoping and technical proposals for digital transformation engagements
+- **Partakus** (B2B automotive spare-parts marketplace), Sep 2017 – Oct 2018: joined as sole consultant; spotted the need and co-built with Sales a **€1.2M bid** for **11 consultants**, won
+- **Arkadin** (B2B conferencing), Mar – Sep 2017: Business Analyst on client portals; requirements, delivery follow-up, roadmap
+- **Libon** (Orange), Mar 2016 – Feb 2017: continued as Product Owner for payments and apps
+- Pre-sales / engagement engineer: planned, pitched and helped close engagements with **Renault**, **L'Oréal**, **Boursorama** and **Group Up**
+- Hive Master: line-managed **8–10 consultants**; defined career paths with HR and staffing with Sales

@@ -1,40 +1,41 @@
 ---
 emoji: 💼
-title: Hive Master, Avant-Vente et Consultant
-company: Palo IT — ESN (50 pers., 12 M€ de CA)
-company_short: Palo IT · 2015–2018
-window_title: palo-it.md — Hive Master, Avant-Vente et Consultant
+title: Consultant & Hive Master
+company: PALO IT — Cabinet de conseil Agile & Produit
+company_short: PALO IT · 2016–2018
+window_title: palo-it.md — Consultant & Hive Master
 stack_label: Stack & Méthodes
 metrics_label: Chiffres Clés
 context_label: Contexte
 achievements_label: Réalisations
 clients_label: Clients Clés
-clients: Renault, L'Oréal, Boursorama, Group Up, Libon, Arkadin
+clients: Partakus, Arkadin, Libon (Orange), Renault, L'Oréal, Boursorama, Group Up
 
-pill_1: blue | 📅 Mars 2015 – Septembre 2018
-pill_2: blue | 📍 Paris, France
-pill_3: purple | 🏢 ESN · Conseil Tech
-pill_4: orange | 👥 10 consultants managés
+pill_1: blue | 📅 Mars 2016 – Octobre 2018
+pill_2: blue | 📍 Région parisienne
+pill_3: purple | 🏢 Conseil Agile & Produit
+pill_4: orange | 👥 8–10 consultants managés
 
-stack: Ingénierie avant-vente, Coaching Agile, Gestion P&L, Management d'équipe, Delivery conseil
+stack: Product ownership, Analyse métier, Avant-vente & construction d'offres, Coaching Agile, Management hiérarchique, Parcours de carrière & staffing
 
-metric_1: 10 | Consultants managés | blue
-metric_2: €12M | CA entreprise | orange
-metric_3: 4 | Comptes majeurs signés | purple
+metric_1: 1,2 M€ | Offre Partakus remportée | orange
+metric_2: 11 | Consultants staffés sur l'offre | purple
+metric_3: 8–10 | Consultants managés | blue
 
 nav_prev_url: partakus.html
-nav_prev_label: Partakus — Directeur de Projets
+nav_prev_label: Kadensis — Head of Projects
 nav_next_url: libon.html
 nav_next_label: Libon — Product Owner
 ---
 
 ## Context
 
-Palo IT est une ESN internationale (700+ personnes aujourd'hui en Asie, Europe, Australie et Amérique du Sud). Sur le bureau parisien, j'occupais deux rôles : animer une ruche de 10 consultants tout en intervenant en tant que consultant pour plusieurs clients (Orange, Boursorama, Arkadin, Renault, etc.).
+PALO IT est un cabinet de conseil Agile et produit. Au bureau de Paris, j'ai mené des missions clients tout en managant 8 à 10 consultants en tant que Hive Master.
 
 ## Achievements
 
-- Ingénieur avant-vente : planification, présentation et aide au closing de missions auprès de **Renault**, **L'Oréal**, **Boursorama** et **Group Up**
-- Animation d'une ruche de **10 consultants** dans les disciplines produit, engineering et design
-- Contribution à la stratégie d'entreprise au niveau de l'entité parisienne
-- Cadrage et rédaction de propositions techniques complexes pour des missions de transformation digitale
+- **Partakus** (marketplace B2B de pièces automobiles), sept. 2017 – oct. 2018 : arrivé comme consultant unique ; identification du besoin et co-construction avec les Ventes d'une **offre de 1,2 M€** pour **11 consultants**, remportée
+- **Arkadin** (conférence B2B), mars – sept. 2017 : Business Analyst sur les portails clients ; exigences, suivi de delivery, roadmap
+- **Libon** (Orange), mars 2016 – fév. 2017 : poursuite en tant que Product Owner paiements et applications
+- Avant-vente / engagement engineer : cadrage, pitch et contribution à la signature de missions avec **Renault**, **L'Oréal**, **Boursorama** et **Group Up**
+- Hive Master : management de **8 à 10 consultants** ; définition des parcours de carrière avec les RH et du staffing avec les Ventes

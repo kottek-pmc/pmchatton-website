@@ -1,38 +1,39 @@
 ---
 emoji: 🚗
-title: Director de Proyectos
-company: Partakus — Marketplace de Automoción
-company_short: Partakus · 2017–2021
-window_title: partakus.md — Director de Proyectos
+title: Head of Projects
+company: Kadensis — Partakus, marketplace B2B de recambios de automóvil
+company_short: Kadensis · 2017–2021
+window_title: partakus.md — Head of Projects
 stack_label: Stack & Métodos
 metrics_label: Cifras Clave
 context_label: Contexto
 achievements_label: Logros
 
 pill_1: purple | 📅 Septiembre 2017 – Febrero 2021
-pill_2: blue | 📍 París, Francia
-pill_3: orange | 🏢 Automoción · Marketplace
-pill_4: green | 🌍 3 países desplegados
+pill_2: blue | 📍 Área metropolitana de París
+pill_3: orange | 🏢 Automoción · Marketplace B2B
+pill_4: green | 🌍 Francia · España · Marruecos
 
-stack: Agile / Scrum, Product discovery, Tests de usuario, Prototipado, Definición de KPI, Jira, Despliegue multipaís, Marketplace B2B
+stack: Agile / Scrum, Capa de integración (APIs externas), Discovery en campo, Prototipado, Pruebas de usuario, Definición de KPIs, Jira, Despliegue multipaís, Marketplace B2B
 
 metric_1: 3 | Países desplegados | purple
-metric_2: 3 | Product Managers gestionados | green
+metric_2: 3 | PMs gestionados | green
+metric_3: ÷2 | Tiempo y coste de despliegue por mercado | orange
+metric_4: 200+ | Vendedores incorporados | blue
 
-nav_prev_url: kottek.html
-nav_prev_label: Kottek — Fundador
+nav_prev_url: winbin.html
+nav_prev_label: WinBin — Cofundador
 nav_next_url: palo-it.html
-nav_next_label: Palo IT — Hive Master
+nav_next_label: PALO IT — Consultor & Hive Master
 ---
 
 ## Context
 
-Partakus es un marketplace B2B digital en el sector de la automoción, que conecta vendedores de recambios y talleres en varios mercados. Me incorporé para liderar el despliegue de los servicios del marketplace en mercados internacionales y actuar como puente entre los equipos de Producto e Ingeniería.
+Partakus es un marketplace B2B de recambios de automóvil, desplegado en Francia, España y Marruecos. Me incorporé como consultor de PALO IT en 2017, continué a través de Kottek, mi consultora, en 2018, y fui contratado a tiempo completo en 2020.
 
 ## Achievements
 
-- Despliegue de los servicios del marketplace en **3 países** — Francia, España y Marruecos — gestionando un equipo de **3 Product Managers**
-- Enlace Producto/Ingeniería: discovery, prototipado, tests de usuario y definición de requisitos de extremo a extremo
-- Entrega orientada a KPI — optimización de tiempos y costes de despliegue por mercado mediante estandarización de procesos
-- Establecimiento de una gobernanza de producto multi-mercado para garantizar la coherencia adaptándose a los contextos regulatorios locales
-- Gestión de relaciones con stakeholders a todos los niveles — dirección, equipos operativos y socios externos, en varios idiomas
+- Despliegue del marketplace en **3 países** (Francia, España, Marruecos); gestión directa de **3 PMs**
+- Responsable del roadmap de la capa de integración (APIs externas); liderazgo del discovery en campo, prototipado y pruebas de usuario
+- Entrega guiada por KPIs: tiempo y coste de despliegue por mercado reducidos **a la mitad**
+- **200+ vendedores** incorporados a la plataforma
